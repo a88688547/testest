@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>有奸細院 The Cinema</title>
+        <!-- 載入"jQuery"檔案 -->
+        <script src="./vendors/jQuery/js/jquery-3.5.1.js"></script>
+        <!-- 載入"reset"檔案 -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- 載入"Noto Sans TC 字型"檔案 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- 載入"導覽列"檔案 -->
+        <link rel="stylesheet" href="./css/header.css" />
+
+        <!-- 載入"本頁"檔案 -->
+        <link rel="stylesheet" href="./css/index.css" />
+        <!-- ----導入Awsome icon.css---- -->
+        <link rel="stylesheet" href="./vendors/fontawesome-free-5.15.1-web/css/all.css" />
+
+        <!--  第二區 3D輪播效果  -->
+        <link rel="stylesheet" href="./css/slider.css" />
+    </head>
+    <body>
+        <!-- ----導覽列---- -->
+        <header>
+            <nav class="hamburg_nav">
+                <ul class="hamburg_ul">
+                    <li><a href="">立即訂票</a></li>
+                    <li><a href="">現正熱映</a></li>
+                    <li><a href="">即將上映</a></li>
+                    <li><a href="">戲院介紹</a></li>
+                    <li><a href="">優惠資訊</a></li>
+                </ul>
+            </nav>
+            <nav class="member_nav">
+                <ul class="member_ul">
+                    <li><a href="">會員註冊</a></li>
+                    <li><a href="">會員登入</a></li>
+                </ul>
+            </nav>
+            <div class="header_control">
+                <button class="hamburg_btn">
+                    <div class="hamburg_line line_1"></div>
+                    <div class="hamburg_line line_2"></div>
+                    <div class="hamburg_line line_3"></div>
+                </button>
+                <a href="" class="logo_box">
+                    <div class="logo_img"><img src="./image/logo.png" alt="logo_img" /></div>
+                    <h1 class="logo_title">The Cinema</h1>
+                </a>
+                <button class="member_btn">
+                    <i class="fas fa-user fa-3x"></i>
+                </button>
+                <nav class="navBar">
+                    <div class="nav_top">
+                        <ul class="ul_box ul_box_1">
+                            <li><a href="">註冊會員</a></li>
+                            <li><a href="">會員登入</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_bot">
+                        <ul class="ul_box ul_box_2">
+                            <li><a href="">立即訂票</a></li>
+                            <li><a href="">現正熱映</a></li>
+                            <li><a href="">即將上映</a></li>
+                            <li><a href="">戲院介紹</a></li>
+                            <li><a href="">優惠資訊</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- 第一區域 滿版 預告片 -->
+        <main>
+            <section class="section section_1">
+                <div class="video_box">
+                    <video class="video_content" src="./videos/john wick 2.mp4" loop controls></video>
+                </div>
+            </section>
+            <div class="block_box">
+                <div class="block_line block_line_left"></div>
+                <h2 class="section_title">本周熱門</h2>
+                <div class="block_line block_line_right"></div>
+            </div>
+            <!-- 第二區域 本周熱門 -->
+            <section class="section section_2">
+                <div class="section_2_box">
+                    <div class="section_2_content_box">
+                        <div class="section_2_content_box_left">
+                            <h3 class="name"></h3>
+                            <div class="s2_movie_info">電影簡介 :</div>
+                            <div class="str"></div>
+                            <a class="link" href="#" target="_blank"
+                                ><img src="./image/index/Youtube_icon.png" alt="Youtube_icon" />預告片</a
+                            >
+                        </div>
+                        <div class="section_2_content_box_right">
+                            <div class="container">
+                                <div id="carousel">
+                                    <a href="./movie_introduction.html" class="pics pic1" target="_blank"
+                                        ><img src="./image/index/week_hot_01.jpg" alt="花木蘭" /></a
+                                    ><!--花木蘭  -->
+                                    <a href="./movie_introduction.html" class="pics pic2" target="_blank"
+                                        ><img src="./image/index/week_hot_02.jpg" alt="粽邪" /></a
+                                    ><!--粽邪  -->
+                                    <a href="./movie_introduction.html" class="pics pic3" target="_blank"
+                                        ><img src="./image/index/week_hot_03.jpg" alt="全面啟動" /></a
+                                    ><!--全面啟動  -->
+                                    <a href="./movie_introduction.html" class="pics pic4" target="_blank"
+                                        ><img src="./image/index/week_hot_04.jpg" alt="飢餓人妻" /></a
+                                    ><!--飢餓人妻  -->
+                                    <a href="./movie_introduction.html" class="pics pic5" target="_blank"
+                                        ><img src="./image/index/week_hot_05.jpg" alt="天能" /></a
+                                    ><!--天能  -->
+                                    <a href="./movie_introduction.html" class="pics pic6" target="_blank"
+                                        ><img src="./image/index/week_hot_06.jpg" alt="怪胎" /></a
+                                    ><!--怪胎  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="block_box">
+                <div class="block_line block_line_left"></div>
+                <h2 class="section_title">即將上映</h2>
+                <div class="block_line block_line_right"></div>
+            </div>
+        </main>
+        <!--  導覽列 滑動 變透明效果  -->
+        <script src="./js/nav.js"></script>
+        <!--  第二區 3D輪播效果  -->
+        <script src="./js/slider.js"></script>
+    </body>
+</html>

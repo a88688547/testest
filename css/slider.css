@@ -1,0 +1,86 @@
+.container {
+    position: relative;
+    width: 600px;
+    margin: 100px auto;
+}
+#carousel {
+    /*   height: 190px; */
+    width: 600px;
+    /*   border: 1px solid #ccc; */
+    position: relative;
+}
+.pics {
+    /* border: 5px solid #808080; */
+    box-sizing: border-box;
+    /* background-color: #fff; */
+}
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6 {
+    display: block;
+    position: absolute;
+    width: 238px;
+    height: 350px;
+    top: 32.5px;
+    left: 200px;
+    transition: all 0.6s 0s ease-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /*圖片 外邊陰影*/
+}
+.pic1 {
+    transform: translate(0, 40px);
+    z-index: 4;
+    /* background: #ccc; */
+}
+.pic2 {
+    transform: translate(70%, -5px);
+    z-index: 3;
+    /* background: #333; */
+}
+.pic3 {
+    transform: translate(140px, -55px) scale(0.9);
+    z-index: 2;
+    opacity: 0.9;
+    /* background: #ff0000; */
+}
+.pic4 {
+    transform: translate(0px, -90px) scale(0.9);
+    z-index: 1;
+    opacity: 0.9;
+    /* background: #f1f1f1; */
+}
+.pic5 {
+    transform: translate(-140px, -55px) scale(0.9);
+    z-index: 2;
+    /* background: #dd5456; */
+}
+.pic6 {
+    transform: translate(-70%, -5px);
+    z-index: 3;
+    /* background: #000; */
+}
+/* 自己額外應加的 Hover 效果 */
+.pic1:hover {
+    transform: translate(0, 40px) scale(1.1);
+}
+.pic2:hover {
+    transform: translate(70%, -5px) scale(1.1);
+}
+.pic3:hover {
+    transform: translate(140px, -55px) scale(1.1);
+}
+.pic4:hover {
+    transform: translate(0px, -90px) scale(1.1);
+}
+.pic5:hover {
+    transform: translate(-140px, -55px) scale(1.1);
+}
+.pic6:hover {
+    transform: translate(-70%, -5px) scale(1.1);
+}
+/* @media  (max-width: 1056px){
+
+
+} */

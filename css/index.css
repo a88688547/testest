@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans TC', 'Source_Sans_Pro', sans-serif;
+  font-size: 62.5%;   /* 設定rem: 16px * 62.5% = 10px */
+}
+img{
+  max-width: 100%;
+  min-width: 100%;
+}
+/* 第一區域 滿版 預告片 */
+
+.section_1{
+  width: 100%;
+}
+
+.video_content{
+  width: 100%;
+  
+}
+/* 各區域 標題 及 分隔線 */
+.block_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block_line{
+  height: 0.5rem;
+  width: 15%;
+  background-color: #1B3766;
+}
+.section_title{
+  font-size: 3rem;
+  padding: 3rem;
+  line-height: 3rem;
+}
+
+/* 第二區域 本周熱門 */
+
+
+.section_2{
+  width: 100%;
+  background-image: url(../image/index/index_main2_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 5rem;
+}
+.section_2_box{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section_2_content_box{
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 30rem;
+}
+/* 第二區 左半邊 */
+.section_2_content_box_left{
+  width: 40%;
+  padding: 10rem 1rem;
+  position: relative;
+}
+
+.name{
+  font-size: 2rem;
+  color: #AC3931;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.s2_movie_info{
+  font-size: 1.5rem;
+  color: #1B3766;
+  margin-bottom: 10px;
+}
+.str{
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.75rem;
+  height: 10rem;
+  /* letter-spacing: 2px; */
+}
+
+.link{
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  right: -15%;
+  bottom: -10%;
+  color: #1B3766;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* 第二區 右半邊 */
+.section_2_content_box_right{
+  width: 60%;
+}
