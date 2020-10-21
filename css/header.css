@@ -37,6 +37,27 @@ header{
   padding: 5px;
   
 }
+@media  (max-width: 374px){
+
+  .logo_box{
+    align-items: center;
+  }
+
+  .logo_img{
+
+    width: 50px;
+  }
+
+  .logo_title{
+    font-size: 24px;
+    padding: 5px;
+  }
+
+
+
+}
+
+
 .navBar{
   width: 700px;
   display: flex;
@@ -165,6 +186,15 @@ header{
    display: none;
    
  }
+ @media  (max-width: 374px){
+  .hamburg_ul{
+    top: 62.21px;
+  }
+
+ }
+
+
+
 
  .hamburg_ul > li {
    width: 100%;

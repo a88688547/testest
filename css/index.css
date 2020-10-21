@@ -83,7 +83,7 @@ img{
   text-decoration: none;
   margin: 5% auto 0px auto;
   color:#fff;
-  background-color: red;
+  background-color: #DF3B57;
   letter-spacing: 2px;
   font-weight: bold;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -451,28 +451,110 @@ img{
 
   .s3_right_movie_info> h3,
   .s3_left_movie_info > h3{
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 10px 0;
   }
 
   .s3_right_movie_info > div,
   .s3_left_movie_info > div{
-    font-size: 2.7rem;
+    font-size: 2rem;
     
   }
 
 }
 
-@media (max-width:630px){
+@media (max-width:501px){
   .info_long{
     /* white-space: nowrap; */
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 
   }
+  .s3_right_movie_info> h3,
+  .s3_left_movie_info > h3{
+    font-size: 2.5rem;
+    padding: 5px 0;
+  }
+
+  .s3_right_movie_info > div,
+  .s3_left_movie_info > div{
+    font-size: 1.5rem;
+    padding: 3px;
+  }
+}
+  @media (max-width:411px){
+    .info_long{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; */
+  
+    }
+    /* .s3_right_movie_info> h3,
+    .s3_left_movie_info > h3{
+      font-size: 2rem;
+      padding: 4px 0;
+    }
+  
+    .s3_right_movie_info > div,
+    .s3_left_movie_info > div{
+      font-size: 1.4rem;
+      padding: 2px;
+    }
+   */
+
+   @media (max-width:376px){
+
+    .info_long{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; */
+  
+    }
+     .s3_right_movie_info> h3, 
+    .s3_left_movie_info > h3{
+      font-size: 3rem;
+      padding: 10px 0;
+    }
+    .s3_right_movie_info > div,
+    .s3_left_movie_info > div{
+      font-size: 2rem;
+      padding: 5px;
+    }
+
+
+   }
+   @media (max-width:376px){
+
+    .info_long{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;}
+
+      .s3_right_movie_info> h3, 
+      .s3_left_movie_info > h3{
+        font-size: 3rem;
+        padding: 7px 0;
+      }
+      .s3_right_movie_info > div,
+      .s3_left_movie_info > div{
+        font-size: 2rem;
+        padding: 2px;
+      }
+
+
+   }
+
+
+
 
 }
 /* ----- 戲院介紹 ----- */
@@ -574,3 +656,146 @@ img{
    width: 100%;
 
  }
+ .single-item_short{
+  display: none !important;
+ }
+
+ @media (max-width:925px){
+
+  .single-item_long{
+    display: none !important;
+  }
+
+  .single-item_short{
+    display: block !important;
+  }
+
+ }
+/* ---- 第六區域 交通資訊 ---- */
+.section_6{
+  width: 100%;
+}
+.section_6_box{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.map_box{
+  width: 60%;
+  font-size: 0;
+}
+.map_info_box{
+  width: 40%;
+  padding: 1%;
+  background-color: #1B3766;
+  /* font-size: 20px; */
+
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+.map_info_box > div + *{
+  margin-top: 5%;
+}
+.map_info_title{
+  font-size: 3rem;
+  color:#568FEA;
+  
+}
+.map_info{
+  font-size: 2rem;
+  margin-left: 8%;
+  color: #fff;
+}
+@media (max-width:1100px){
+
+  .section_6_box{
+    flex-direction: column ;
+  }
+  .map_box{
+    width: 100%;
+   
+  }
+  .map_info_box{
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  .map_info_title{
+    font-size: 4rem;
+  }
+
+  .map_info{
+    font-size: 3rem;
+  }
+}
+@media (max-width:501px){
+  .map_info_box{
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+  }
+
+  .map_info_title{
+    font-size: 4rem;
+  }
+
+  .map_info{
+    font-size: 3rem;
+  }
+
+}
+/* ---- footer ----  */
+
+footer{
+  width: 100%;
+  background-color: #1E1E24;
+  margin-top: 10px;
+}
+.footer_box{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer_cmpName_box{
+  display: flex;
+ 
+  font-size: 16px;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.footer_info_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+.footer_cmpName,.footer_info{
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.808);
+}
+
+.footer_info:hover{
+  color: #fff;
+
+}
+
+@media (max-width:650px){
+
+  .footer_cmpName_box{
+    flex-direction: column;
+  }
+
+  .footer_info_box{
+    flex-direction: column;
+  }
+}
