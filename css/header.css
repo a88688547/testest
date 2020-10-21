@@ -32,7 +32,7 @@ header{
 }
 .logo_title{
   text-align: center;
-  font-size: 2rem;
+  font-size: 32px;
   color: #fff;
   padding: 5px;
   
@@ -72,10 +72,10 @@ header{
 }
 
 .ul_box_1{
-  font-size: 1rem;
+  font-size: 16px;
 }
 .ul_box_2{
-  font-size: 1.5rem;
+  font-size: 25px;
  }
 
 
@@ -172,14 +172,16 @@ header{
  }
 
  .hamburg_ul > li > a{
-   font-size: 2rem;
+   font-size: 32px;
    color: #1B3766;
-   border-bottom: 1px solid #1B3766;
    display: block;
    text-align: center;
-   line-height: 2rem;
+   line-height: 32px;
    padding: 20px 0;
-  
+ }
+ 
+ .hamburg_ul > li + * {
+  border-top: 1px solid #1B3766;
  }
 
  .hamburg_ul > li > a:hover{
@@ -198,6 +200,8 @@ header{
   cursor: pointer;
   outline: none;
   background: none;
+  border: 0px;
+  font-size: 1.5em;
  }
  .member_btn > i {
    color: #fff;
@@ -237,12 +241,12 @@ header{
 }
 
 .member_ul > li > a{
-  font-size: 2rem;
+  font-size: 32px;
   color: #1B3766;
   border-bottom: 1px solid #1B3766;
   display: block;
   text-align: center;
-  line-height: 2rem;
+  line-height: 32px;
   padding: 20px 0;
  
 }
@@ -260,14 +264,16 @@ header{
     display: flex;
   }
   .member_btn{
-    display: flex;
+    display: block;
+  }
+  .hamburg_nav,.member_nav{
+    display: block ; 
   }
  }
- .hamburg_nav,.member_nav{
-   display: block ; 
- }
+ 
  @media  (min-width: 1071px){
   .hamburg_nav,.member_nav{
     display: none;
   }
  }
+
