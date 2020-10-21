@@ -20,7 +20,9 @@
         <link rel="stylesheet" href="./css/index.css" />
         <!-- ----導入Awsome icon.css---- -->
         <link rel="stylesheet" href="./vendors/fontawesome-free-5.15.1-web/css/all.css" />
-
+        <!--  第五區 SLICK 輪播效果  -->
+        <link rel="stylesheet" type="text/css" href="./vendors/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
         <!--  第二區 3D輪播效果  -->
         <link rel="stylesheet" href="./css/slider.css" />
     </head>
@@ -138,14 +140,14 @@
             <!-- ---- 即將上映 ---- -->
             <section class="section section_3">
                 <div class="section_3_box">
-                    <a class="section_3_left_box">
+                    <a href="" class="section_3_left_box">
                         <div class="s3_left_movie_info">
                             <h3>翻供</h3>
                             <div class="info">主要演員：曹佑寧、林映唯、陳妤</div>
                             <div class="info">影片類型：文藝愛情</div>
                             <div class="info">上映日期：2020/08/21</div>
                             <div class="info">劇情簡介:</div>
-                            <div class="info">
+                            <div class="info info_long">
                                 地球面臨末日危機，偏離軌道的彗星即將衝破大氣層，將世界夷為平地。隨著全球陷入毀滅倒數的恐慌，為了生存挺身而戰的父親約翰（傑瑞德巴特勒
                                 飾）決心把他的家人帶到選中之地，。
                             </div>
@@ -165,7 +167,7 @@
                                 <div class="info">影片類型：文藝愛情</div>
                                 <div class="info">上映日期：2020/08/21</div>
                                 <div class="info">劇情簡介:</div>
-                                <div class="info">
+                                <div class="info info_long">
                                     地球面臨末日危機，偏離軌道的彗星即將衝破大氣層，將世界夷為平地。隨著全球陷入毀滅倒數的恐慌，為了生存挺身而戰的父親約翰（傑瑞德巴特勒
                                     飾）決心把他的家人帶到選中之地，。
                                 </div>
@@ -184,7 +186,7 @@
                                 <div class="info">影片類型：動作、驚悚</div>
                                 <div class="info">上映日期：2020/08/12</div>
                                 <div class="info">劇情簡介:</div>
-                                <div class="info">
+                                <div class="info info_long">
                                     地球面臨末日危機，偏離軌道的彗星即將衝破大氣層，將世界夷為平地。隨著全球陷入毀滅倒數的恐慌，為了生存挺身而戰的父親約翰（傑瑞德巴特勒
                                     飾）決心把他的家人帶到選中之地，。
                                 </div>
@@ -200,7 +202,7 @@
                                 <div class="info">影片類型：懸疑、驚悚</div>
                                 <div class="info">上映日期：2020/09/04</div>
                                 <div class="info">劇情簡介:</div>
-                                <div class="info">
+                                <div class="info info_long">
                                     地球面臨末日危機，偏離軌道的彗星即將衝破大氣層，將世界夷為平地。隨著全球陷入毀滅倒數的恐慌，為了生存挺身而戰的父親約翰（傑瑞德巴特勒
                                     飾）決心把他的家人帶到選中之地，。
                                 </div>
@@ -219,7 +221,7 @@
                                 <div class="info">影片類型：動畫</div>
                                 <div class="info">上映日期：2020/09/30</div>
                                 <div class="info">劇情簡介:</div>
-                                <div class="info">
+                                <div class="info info_long">
                                     地球面臨末日危機，偏離軌道的彗星即將衝破大氣層，將世界夷為平地。隨著全球陷入毀滅倒數的恐慌，為了生存挺身而戰的父親約翰（傑瑞德巴特勒
                                     飾）決心把他的家人帶到選中之地，。
                                 </div>
@@ -271,10 +273,40 @@
                 <h2 class="section_title">優惠資訊</h2>
                 <div class="block_line block_line_right"></div>
             </div>
+            <section class="section section_5">
+                <div class="single-item">
+                    <a class="discount1 discount" href="./discount.html"
+                        ><img src="./image/index/activity_01.png" alt="賴著你不走"
+                    /></a>
+                    <a class="discount2 discount" href="./discount.html"
+                        ><img src="./image/index/activity_02.png" alt="教師節 優惠"
+                    /></a>
+                    <a class="discount3 discount" href="./discount.html"
+                        ><img src="./image/index/activity_03.jpg" alt="團體購票 優惠"
+                    /></a>
+                </div>
+            </section>
         </main>
         <!--  導覽列 滑動 變透明效果  -->
         <script src="./js/nav.js"></script>
         <!--  第二區 3D輪播效果  -->
         <script src="./js/slider.js"></script>
+        <!-- 第五區 SLICK 輪播效果 -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="./vendors/slick/slick.min.js"></script>
+        <!--  啟動SLICK套件  -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.single-item').slick({
+                    autoplay: true,
+                    slidesToShow: 1,
+                    autoplaySpeed: 1500,
+                    infinite: true,
+                    slidesToScroll: 1,
+                    arrows: false,
+                })
+            })
+        </script>
     </body>
 </html>
