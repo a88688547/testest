@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 設定rem: 16px * 62.5% = 10px */
+}
+body {
+    font-family: 'Noto Sans TC', 'Source_Sans_Pro', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+/* 各寬度 font-size 變化 (rem) */
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    :root {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    :root {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+    :root {
+        font-size: 60%;
+    }
+}

@@ -1,0 +1,532 @@
+/* ---- 頁面提醒文字 ---- */
+.page_title {
+    text-align: center;
+    font-size: 3.6rem;
+    color: #312b34;
+    margin: 10px 0;
+}
+/* ----- banner 滾動視差 ----- */
+.banner {
+    background-image: url(../image/about_us/about\ us_banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    max-width: 1520px;
+}
+
+/* @media (max-width: 575.98px) { ... }
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+
+@media (min-width: 1200px) {
+    .banner {
+        background-attachment: fixed; /* 滾動視差 屬性 */
+    }
+}
+/* ----- 主要內容區域 切分 ---- */
+main {
+    width: 100%;
+}
+
+.content_box {
+    width: 90%;
+    margin: 3% auto;
+}
+
+/* ----- 側邊 快速選單 menu -----*/
+
+.aside_box {
+    display: none; /* 先隱藏 等螢幕變大時才顯示*/
+
+    margin-right: 10px;
+    align-self: stretch;
+}
+.aside_menu_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 82.8px;
+    background-color: #464f69;
+}
+
+.menu_title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: #fffdfc 1px solid;
+}
+.menu_list > li > a {
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: #c4d3e3;
+    text-decoration: none;
+    font-size: 1.6rem;
+    opacity: 0.6;
+}
+.menu_list > li > a:hover {
+    opacity: 1;
+}
+
+/* ---- 主要內容  ---- */
+.main_box {
+    width: 100%; /*等待側邊攔時出現 修改寬度*/
+}
+
+/* ---- 各區域 通用調整 ---- */
+.section {
+    width: 100%;
+}
+
+/* ---- 第一區域  戲院簡介  ---- */
+.section_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_1_left_box {
+    width: 100%;
+    background-color: #c4d3e3;
+    margin-bottom: 10px;
+}
+.section_1_right_box {
+    width: 100%;
+}
+.section_1_title {
+    font-size: 3rem;
+    padding: 5px;
+    color: #464f69;
+}
+
+.section_1_info {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding: 5px;
+    background-color: #e6f0f6;
+    color: #473e4a;
+}
+
+.section_1_text {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    color: #464f69;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.section_1_icon_img {
+    width: 30px;
+}
+/* 第一區域  戲院簡介 RWD 變化 */
+@media (min-width: 1200px) {
+    .content_box {
+        display: flex;
+    }
+
+    .aside_box {
+        display: block;
+    }
+
+    .main_box {
+        width: calc(100% - 115px);
+    }
+
+    .section_1 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section_1_left_box {
+        width: calc(60% - 10px);
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    .section_1_right_box {
+        width: 40%;
+    }
+    .section_1_title,
+    .section_1_info {
+        padding: 10px;
+    }
+    .section_1_text {
+        padding: 2px 10px 2px 10px;
+    }
+}
+/* 第二區域  交通位置及停車資訊 */
+.section_2 {
+    width: 100%;
+    margin-top: 10px;
+    border-top: #473e4a 1px solid;
+}
+.section_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.section_title_img {
+    min-width: 60px;
+    width: 10%;
+}
+.section_title > h3 {
+    font-size: 3rem;
+    color: #464f69;
+}
+.map_box {
+    margin: 10px;
+}
+.section_2_info_box {
+    width: 100%;
+}
+.h4_title_box {
+    background-color: #c4d3e3;
+}
+.h4_title_box > h4 {
+    color: #473e4a;
+    font-size: 2.5rem;
+    padding: 5px;
+    font-weight: 500;
+}
+.section_2_text_box {
+}
+.s2_info_title {
+    font-size: 2rem;
+    color: #464f69;
+    padding: 5px;
+    font-weight: 500;
+}
+.s2_info_text {
+    font-size: 1.6rem;
+    color: #809ab4;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+.s2_info_list {
+    /* margin-left: 20px; */
+    /* list-style: square; */
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    color: #473e4a;
+}
+.s2_info_list > li {
+    margin-left: 10px;
+}
+
+.section_2_info_box > ol {
+    list-style: disc;
+    margin-left: 20px;
+}
+.section_2_info_box > ol > li {
+    font-size: 1.6rem;
+    color: #809ab4;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.s2_box_bot_line {
+    border-bottom: 1px solid #e6ecf3;
+}
+.section_2_text_box > a {
+    /* text-decoration: none; */
+    opacity: 0.6;
+}
+.section_2_text_box > a:hover {
+    opacity: 1;
+}
+
+.map_icon_img_box {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.map_icon_img {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+}
+/* 第二區域  交通位置及停車資訊 RWD 變化*/
+@media (min-width: 1200px) {
+    .section_2_text_box {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .section_2_text_box_left {
+        width: 30%;
+    }
+    .section_2_text_box_right {
+        width: 70%;
+    }
+    .title_bus {
+        align-self: flex-start;
+    }
+    .h4_title_box {
+    }
+    .s2_info_title {
+        margin-left: 10px;
+    }
+    .s2_text_box_1 {
+        width: 20%;
+    }
+    .s2_text_box_2 {
+        width: 30%;
+    }
+    .s2_text_box_3 {
+        width: 50%;
+    }
+    .map_icon_img {
+        width: 20px;
+        height: 25px;
+    }
+}
+/* 第三區域 票價資訊 */
+.section_3 {
+    width: 100%;
+    margin-top: 10px;
+    border-top: #473e4a 1px solid;
+}
+.s3_type_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.s3_type_box > a {
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    font-size: 2rem;
+    color: #464f69;
+    opacity: 1;
+    border-bottom: 1px solid #464f69;
+    margin-right: 10px;
+}
+.s3_type_box > a:hover {
+    opacity: 1;
+}
+.s3_ticket_box {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.s3_ticket_box > div {
+    padding: 5px;
+}
+.ticket {
+    display: flex;
+    align-items: center;
+    min-width: 600px;
+    /* width: 1500px; */
+}
+.ticket_1 {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.ticket_2,
+.ticket_3,
+.ticket_4,
+.ticket_5 {
+    width: 20%;
+}
+.ticket_6,
+.ticket_7 {
+    width: 20%;
+}
+.ticket_box1 {
+    background-color: #c4d3e3;
+}
+.ticket_box1 > div {
+    font-size: 1.8rem;
+}
+.ticket_box3,
+.ticket_box5,
+.ticket_box7 {
+    background-color: #e6f0f6;
+}
+.ticket_2,
+.ticket_3,
+.ticket_4,
+.ticket_5,
+.ticket_6,
+.ticket_7 {
+    text-align: center;
+}
+.ticket_info {
+    font-size: 1.6rem;
+}
+/* 各種票種注意事項 */
+.s3_ticket_note_box {
+    width: 100%;
+}
+.s3_ticket_note_box > h4 {
+    background-color: #c4d3e3;
+    color: #473e4a;
+    font-size: 2.5rem;
+    padding: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.s3_ticket_note_info_box {
+    display: flex;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.s3_ticket_note_info_box > div {
+    /* margin: 5px 0px; */
+    padding: 5px;
+    margin-left: 10px;
+}
+.s3_ticket_note_info_1 {
+    width: 20%;
+}
+.s3_ticket_note_info_2 {
+    width: 80%;
+}
+.s3_ticket_note_info_box:nth-child(2n-1) {
+    background-color: #e6f0f6;
+}
+
+/* 第三區域  票價資訊 RWD 變化*/
+
+@media (min-width: 1200px) {
+    .s3_type_box > a {
+        opacity: 0.6;
+    }
+}
+/* ---- 第四區域  影廳設施 -----*/
+.section_4 {
+    width: 100%;
+    margin-top: 10px;
+    border-top: #473e4a 1px solid;
+}
+.equipment_img_box {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 10px 0;
+}
+.equipment_img {
+    /* padding: 10px; */
+    margin: 10px auto;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    display: block;
+    text-decoration: none;
+    color: #809ab4;
+}
+/* 座椅資訊  */
+.chair {
+    width: 100%;
+}
+.chair_box {
+    display: flex;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 5px;
+    text-align: center;
+}
+
+.chair_box > div:first-child {
+    width: 30%;
+    text-align: center;
+}
+.chair_box > div:nth-child(2) {
+    width: 70%;
+}
+.chair_box1 {
+    font-size: 1.8rem;
+}
+
+.chair_box2 {
+    background-color: #e6f0f6;
+    font-size: 1.8rem;
+}
+.chair_title {
+    background-color: #c4d3e3;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.Barrier-free {
+    width: 100%;
+}
+
+.Barrier-free > h4 {
+    margin-top: 10px;
+    background-color: #c4d3e3;
+    color: #473e4a;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+.Barrier-free > ol {
+    list-style: disc;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+.Barrier-free > ol > li {
+    padding: 5px;
+}
+
+@media (min-width: 1200px) {
+    .equipment_img_box {
+        display: flex;
+    }
+    .equipment_img {
+        margin: 0 5px;
+        color: #809ab4;
+        opacity: 0.6;
+    }
+    .equipment_img:hover {
+        opacity: 1;
+    }
+}
+/* ---- 第五區域 戲院須知 ---- */
+.Notice_title {
+    background-color: #c4d3e3;
+    color: #473e4a;
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-top: 10px;
+}
+.Notice_list {
+    list-style: disc;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    padding: 5px;
+}
