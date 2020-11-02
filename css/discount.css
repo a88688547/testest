@@ -80,9 +80,13 @@ main {
         width: 40%;
         padding: 10px;
         margin: auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .credit_card_img > img {
-        width: 100%;
+        width: 80%;
+        margin: auto auto;
     }
     .activity_text {
         width: 60%;

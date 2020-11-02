@@ -5,7 +5,7 @@ function _scroll() {
     if (scrollTop < 10) {
         $('header').css('opacity', 1)
     } else {
-        $('header').css('opacity', 0.9)
+        $('header').css('opacity', 0.99)
     }
 }
 $(window).on('scroll', function () {
@@ -14,17 +14,17 @@ $(window).on('scroll', function () {
 
 // 漢堡圖示 點擊時 切換Class 名稱
 // 以及 選單向下滑出
-$(document).ready(function(){
-    $(".hamburg_btn").click(function(){
-        $(this).toggleClass("btn-on");
-        $(".hamburg_ul").slideToggle(300);
-    });
-});
+$(document).ready(function () {
+    $('.hamburg_btn').click(function () {
+        $(this).toggleClass('btn-on')
+        $('.hamburg_ul').slideToggle(300)
+    })
+})
 // 會員圖示 點擊時  選單向下滑出
 
-$(document).ready(function(){
-    $(".member_btn").click(function(){
+$(document).ready(function () {
+    $('.member_btn').click(function () {
         // $(this).toggleClass("btn-on");
-        $(".member_ul").slideToggle(300);
-    });
-});
+        $('.member_ul').slideToggle(300)
+    })
+})

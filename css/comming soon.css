@@ -30,7 +30,7 @@
     margin: 0 auto;
     letter-spacing: 2px;
     line-height: 1.5;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@
 
 .movie_time {
     color: #473e4a;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 500;
 }
 .movie_title > h3 {

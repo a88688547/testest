@@ -96,7 +96,7 @@
 .name {
     font-size: 3.2rem;
     color: #ac3931;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -572,7 +572,7 @@
     width: 100%;
 }
 .section_6_box {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,4 +640,8 @@
     .map_info {
         font-size: 3rem;
     }
+}
+
+.section_3_box a {
+    text-decoration: none;
 }
