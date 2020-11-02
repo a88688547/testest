@@ -1,309 +1,277 @@
-header a{
-  text-decoration: none;
-  color: #fff;
-  display: block;
+header a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
 }
 
-header{
-  background-color:rgba(27, 55, 102, 1);
-  width: 100%;
-  z-index: 99;
-  position: sticky;
-  top: 0px;
+header {
+    background-color: rgba(27, 55, 102, 1);
+    width: 100%;
+    z-index: 99;
+    position: sticky;
+    top: 0px;
 }
-.header_control{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  z-index: 99;
-}
-.logo_box{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.logo_img{
-  /* height: 60px; */
-  width: 60px;
-  padding: 5px;
-}
-.logo_title{
-  text-align: center;
-  font-size: 32px;
-  color: #fff;
-  padding: 5px;
-  
-}
-@media  (max-width: 374px){
-
-  .logo_box{
+.header_control {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  .logo_img{
-
-    width: 50px;
-  }
-
-  .logo_title{
-    font-size: 24px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 99;
+}
+.logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logo_img {
+    /* height: 60px; */
+    width: 60px;
     padding: 5px;
-  }
+}
+.logo_title {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    padding: 5px;
+}
+@media (max-width: 374px) {
+    .logo_box {
+        align-items: center;
+    }
 
+    .logo_img {
+        width: 50px;
+    }
 
-
+    .logo_title {
+        font-size: 24px;
+        padding: 5px;
+    }
 }
 
-
-.navBar{
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+.navBar {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-.nav_top{
-  width: 25%;
+.nav_top {
+    width: 25%;
 }
-.nav_bot{
-  width: 100%;
-}
-
-
-.ul_box{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  
-}
-.ul_box > li >a {
-  padding: 10px;
+.nav_bot {
+    width: 100%;
 }
 
-.ul_box > li >a:hover {
-  color: #0496FF;
+.ul_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.ul_box > li > a {
+    padding: 10px;
 }
 
-.now_page{       /* 當前頁面 改變顏色 提示 */
-  color: #0496FF;
+.ul_box > li > a:hover {
+    color: #0496ff;
 }
 
-.ul_box_1{
-  font-size: 16px;
+.now_page {
+    /* 當前頁面 改變顏色 提示 */
+    color: #0496ff !important;
 }
-.ul_box_2{
-  font-size: 25px;
- }
 
+.ul_box_1 {
+    font-size: 16px;
+}
+.ul_box_2 {
+    font-size: 25px;
+}
 
 /* 漢堡未點擊前 基本樣式 */
-.hamburg_btn{
-  display: none;
-  border: 1px solid #fff;
-  width: 44px;
-  height: 44px;
-  
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  background: none;
+.hamburg_btn {
+    display: none;
+    border: 1px solid #fff;
+    width: 44px;
+    height: 44px;
+
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: none;
 }
 
-
-
- /* 漢堡中的三條條設定 */
- .hamburg_line{
-  height: 2px;
-  width: 80%;
-  background-color: #fff;
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
- }
+/* 漢堡中的三條條設定 */
+.hamburg_line {
+    height: 2px;
+    width: 80%;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* 上面那條線 */
-.line_1{
-  top: 25%;
+.line_1 {
+    top: 25%;
 }
 
-
 /* 下面那條線 */
-.line_3{
-  top: 75%;
+.line_3 {
+    top: 75%;
 }
 
 /* 漢堡 被點擊後 樣式變化 */
-.btn-on > .line_1{
-  transform-origin: top left;
-  top: 5px;
-  left: 6px;
-  width: 102%;
-  transform: rotate(45deg);
-
+.btn-on > .line_1 {
+    transform-origin: top left;
+    top: 5px;
+    left: 6px;
+    width: 102%;
+    transform: rotate(45deg);
 }
 
-.btn-on > .line_2{
-  opacity: 0;
+.btn-on > .line_2 {
+    opacity: 0;
 }
 
-.btn-on > .line_3{
-  transform-origin: top left;
-  bottom: 5px;
-  left: 6px;
-  width: 102%;
-  transform: rotate(-45deg);
-  top: auto;
-
+.btn-on > .line_3 {
+    transform-origin: top left;
+    bottom: 5px;
+    left: 6px;
+    width: 102%;
+    transform: rotate(-45deg);
+    top: auto;
 }
 
+/* 漢堡 點擊後 顯示之導覽列  */
 
- /* 漢堡 點擊後 顯示之導覽列  */
-
- .hamburg_nav{
-   width: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 10;
-   display: none ;
- 
- }
-
- .hamburg_ul{
-  position: absolute;
-  top: 74.862px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   background-color: #0496FF;
-   display: none;
-   
- }
- @media  (max-width: 374px){
-  .hamburg_ul{
-    top: 62.21px;
-  }
-
- }
-
-
-
-
- .hamburg_ul > li {
-   width: 100%;
-
- }
-
- .hamburg_ul > li > a{
-   font-size: 32px;
-   color: #1B3766;
-   display: block;
-   text-align: center;
-   line-height: 32px;
-   padding: 20px 0;
- }
- 
- .hamburg_ul > li + * {
-  border-top: 1px solid #1B3766;
- }
-
- .hamburg_ul > li > a:hover{
-   color: #fff;
- }
-
-
-
- /* 會員相關 未點擊前 圖示 */
- .member_btn{
-  display: none;
-  /* border: 1px solid #fff; */
-  /* width: 44px;
-  height: 44px; */
-  /* position: relative; */
-  cursor: pointer;
-  outline: none;
-  background: none;
-  border: 0px;
-  font-size: 1.5em;
- }
- .member_btn > i {
-   color: #fff;
-
- }
-
- /* 會員圖示 點擊後 顯示之選單 */
-
- .member_nav{
-
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  display: none;
- }
-
- .member_ul{
-  position: absolute;
-  top: 74.862px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   background-color: #0496FF;
-   display: none;
-   
- }
-
-
-
-
- .member_ul > li {
-  width: 100%;
-
-}
-
-.member_ul > li > a{
-  font-size: 32px;
-  color: #1B3766;
-  border-bottom: 1px solid #1B3766;
-  display: block;
-  text-align: center;
-  line-height: 32px;
-  padding: 20px 0;
- 
-}
-
-.member_ul > li > a:hover{
-  color: #fff;
-}
-
-
- @media  (max-width: 1071px){
-  .navBar{
+.hamburg_nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     display: none;
-  }
-  .hamburg_btn{
+}
+
+.hamburg_ul {
+    position: absolute;
+    top: 74.862px;
     display: flex;
-  }
-  .member_btn{
-    display: block;
-  }
-  .hamburg_nav,.member_nav{
-    display: block ; 
-  }
- }
- 
- @media  (min-width: 1071px){
-  .hamburg_nav,.member_nav{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #0496ff;
     display: none;
-  }
- }
+}
+@media (max-width: 374px) {
+    .hamburg_ul {
+        top: 62.21px;
+    }
+}
 
+.hamburg_ul > li {
+    width: 100%;
+}
+
+.hamburg_ul > li > a {
+    font-size: 32px;
+    color: #1b3766;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    padding: 20px 0;
+}
+
+.hamburg_ul > li + * {
+    border-top: 1px solid #1b3766;
+}
+
+.hamburg_ul > li > a:hover {
+    color: #fff;
+}
+
+/* 會員相關 未點擊前 圖示 */
+.member_btn {
+    display: none;
+    /* border: 1px solid #fff; */
+    /* width: 44px;
+  height: 44px; */
+    /* position: relative; */
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: 0px;
+    font-size: 1.5em;
+}
+.member_btn > i {
+    color: #fff;
+}
+
+/* 會員圖示 點擊後 顯示之選單 */
+
+.member_nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+.member_ul {
+    position: absolute;
+    top: 74.862px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #0496ff;
+    display: none;
+}
+
+.member_ul > li {
+    width: 100%;
+}
+
+.member_ul > li > a {
+    font-size: 32px;
+    color: #1b3766;
+    border-bottom: 1px solid #1b3766;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    padding: 20px 0;
+}
+
+.member_ul > li > a:hover {
+    color: #fff;
+}
+
+@media (max-width: 1071px) {
+    .navBar {
+        display: none;
+    }
+    .hamburg_btn {
+        display: flex;
+    }
+    .member_btn {
+        display: block;
+    }
+    .hamburg_nav,
+    .member_nav {
+        display: block;
+    }
+}
+
+@media (min-width: 1071px) {
+    .hamburg_nav,
+    .member_nav {
+        display: none;
+    }
+}

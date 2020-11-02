@@ -1,48 +1,49 @@
-.breadcrumb a{
-  text-decoration: none;
+.breadcrumb a {
+    text-decoration: none;
 }
 
-.breadcrumb{
-  width: 100%;
+.breadcrumb {
+    width: 100%;
 }
-.breadcrumb_box{
-  width: 90%;
-  margin: 10px auto;
-  position: relative;
+.breadcrumb_box {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
 }
-.breadcrumb_list{
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-
-  }
-.breadcrumb_list > li{
-  font-size: 1.6rem;
+.breadcrumb_list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
-
-
-.breadcrumb_list > li::before{
-  content: "/";
-  margin: 0 10px;
-
-}
-.breadcrumb_list > li:first-child::before{
-  content: "";
-  margin: 0 0;
+.breadcrumb_list > li {
+    font-size: 1.6rem;
 }
 
-.breadcrumb_link{
-  color: #C3D3E3;
-  font-size: 1.6rem;
-  
+.breadcrumb_list > li::before {
+    content: '/';
+    margin: 0 10px;
 }
-.breadcrumb_link:hover{
-  color: #1b3766;
-  
-}
-
-.now_page{
-  color: #1b3766;
+.breadcrumb_list > li:first-child::before {
+    content: '';
+    margin: 0 0;
 }
 
+.breadcrumb_link {
+    color: #c3d3e3;
+    font-size: 1.6rem;
+}
+.breadcrumb_link:hover {
+    color: #1b3766;
+}
 
+.now_page {
+    color: #1b3766;
+}
+
+/* ---- 頁面提醒文字 ---- */
+.page_title {
+    text-align: center;
+    font-size: 3.6rem;
+    color: #312b34;
+    margin: 10px 0;
+}

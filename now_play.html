@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>現正熱映</title>
+        <!-- 載入"reset"檔案 -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- ----- 載入jQuery ---- -->
+        <script src="./vendors/jQuery/js/jquery-3.5.1.js"></script>
+        <!-- 載入"Noto Sans TC 字型"檔案 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- 載入"導覽列"檔案 -->
+        <link rel="stylesheet" href="./css/header.css" />
+        <!-- 載入"All 通用設定"檔案 -->
+        <link rel="stylesheet" href="./css/all.css" />
+        <!-- 載入"本頁"檔案 -->
+        <link rel="stylesheet" href="./css/now_play.css" />
+        <!-- 載入"footer"檔案 -->
+        <link rel="stylesheet" href="./css/footer.css" />
+        <!-- 載入"breadcrumb 麵包屑"檔案 -->
+        <link rel="stylesheet" href="./css/breadcrumb.css" />
+        <!--  瀑布流  -->
+        <script src="./vendors/Masonry/js/Masonry.js"></script>
+        <script src="./vendors/imagesloaded/imagesloaded.js"></script>
+        <script src="./js/waterfall.js"></script>
+    </head>
+    <body>
+        <!-- ----導覽列---- -->
+        <header>
+            <nav class="hamburg_nav">
+                <ul class="hamburg_ul">
+                    <li><a href="">立即訂票</a></li>
+                    <li><a href="">現正熱映</a></li>
+                    <li><a href="">即將上映</a></li>
+                    <li><a href="">戲院介紹</a></li>
+                    <li><a href="">優惠資訊</a></li>
+                </ul>
+            </nav>
+            <nav class="member_nav">
+                <ul class="member_ul">
+                    <li><a href="">會員註冊</a></li>
+                    <li><a href="">會員登入</a></li>
+                </ul>
+            </nav>
+            <div class="header_control">
+                <button class="hamburg_btn">
+                    <div class="hamburg_line line_1"></div>
+                    <div class="hamburg_line line_2"></div>
+                    <div class="hamburg_line line_3"></div>
+                </button>
+                <a href="" class="logo_box">
+                    <div class="logo_img"><img src="./image/logo.png" alt="logo_img" /></div>
+                    <h1 class="logo_title">The Cinema</h1>
+                </a>
+                <a href="" class="member_btn">
+                    <i class="fas fa-user fa-3x"></i>
+                </a>
+                <nav class="navBar">
+                    <div class="nav_top">
+                        <ul class="ul_box ul_box_1">
+                            <li><a href="">註冊會員</a></li>
+                            <li><a href="">會員登入</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_bot">
+                        <ul class="ul_box ul_box_2">
+                            <li><a href="">立即訂票</a></li>
+                            <li><a href="" class="now_page">現正熱映</a></li>
+                            <li><a href="">即將上映</a></li>
+                            <li><a href="">戲院介紹</a></li>
+                            <li><a href="">優惠資訊</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ----麵包屑 breadcrumb---- -->
+        <div class="breadcrumb">
+            <div class="breadcrumb_box">
+                <ol class="breadcrumb_list">
+                    <li><a href="" class="breadcrumb_link">首頁</a></li>
+                    <li><a class="now_page">現正熱映</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- 頁面提示 文字 -->
+        <h2 class="page_title">現正熱映</h2>
+        <!-- 主要內容 -->
+        <main>
+            <section class="section section_1">
+                <div class="masonry">
+                    <div class="loadingScreen"></div>
+                    <div id="waterfallArea">
+                        <div class="content_box content_long content_long_box1">
+                            <a href="./movie_introduction.html" class="movie_img long_img_1">
+                                <img src="./image/now_play/MonsterHunter.jpg " />
+                            </a>
+                            <h2 class="content_box_title">魔物獵人</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+
+                        <div class="content_box content_box1">
+                            <a href="./movie_introduction.html" class="movie_img img_1">
+                                <img src="./image/now_play/now_play_01.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">紫羅蘭永恆花園</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+                        <div class="content_box content_box2">
+                            <a href="./movie_introduction.html" class="movie_img img_2">
+                                <img src="./image/now_play/now_play_02.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">粽邪</h2>
+                            <div class="content_box_text">類型 : 恐怖、驚悚</div>
+                        </div>
+                        <div class="content_box content_long content_long_box2">
+                            <a href="./movie_introduction.html" class="movie_img long_img_2">
+                                <img src="./image/now_play/john_wick_3.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 3</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_long content_long_box3">
+                            <a href="./movie_introduction.html" class="movie_img long_img_3">
+                                <img src="./image/now_play/west_world_l.jpeg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">西方極樂園</h2>
+                            <div class="content_box_text">類型 : 劇情</div>
+                        </div>
+
+                        <div class="content_box content_box3">
+                            <a href="./movie_introduction.html" class="movie_img img_3">
+                                <img src="./image/now_play/now_play_03.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">皮面人</h2>
+                            <div class="content_box_text">類型 : 恐怖、驚悚</div>
+                        </div>
+                        <div class="content_box content_box4">
+                            <a href="./movie_introduction.html" class="movie_img img_4">
+                                <img src="./image/now_play/now_play_04.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">馬拉薩尼亞 32號陰宅</h2>
+                            <div class="content_box_text">類型 : 恐怖、驚悚</div>
+                        </div>
+                        <div class="content_box content_long content_long_box4">
+                            <a href="./movie_introduction.html" class="movie_img long_img_4">
+                                <img src="./image/now_play/now_play_01_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">紫羅蘭永恆花園</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+
+                        <div class="content_box content_box5">
+                            <a href="./movie_introduction.html" class="movie_img img_5">
+                                <img src="./image/now_play/now_play_05.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">Fate Stay Night</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+                        <div class="content_box content_long content_long_box5">
+                            <a href="./movie_introduction.html" class="movie_img long_img_5">
+                                <img src="./image/now_play/john_wick_1.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 1</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_long content_long_box6">
+                            <a href="./movie_introduction.html" class="movie_img long_img_6">
+                                <img src="./image/now_play/wick.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">怪胎</h2>
+                            <div class="content_box_text">類型 : 愛情</div>
+                        </div>
+                        <div class="content_box content_long content_long_box7">
+                            <a href="./movie_introduction.html" class="movie_img long_img_7">
+                                <img src="./image/now_play/now_play_02_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">粽邪</h2>
+                            <div class="content_box_text">類型 : 驚悚</div>
+                        </div>
+
+                        <div class="content_box content_box6">
+                            <a href="./movie_introduction.html" class="movie_img img_6">
+                                <img src="./image/now_play/now_play_06.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">言葉之庭</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+                        <div class="content_box content_box7">
+                            <a href="./movie_introduction.html" class="movie_img img_7">
+                                <img src="./image/now_play/MonsterHunter_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">魔物獵人</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_long content_long_box8">
+                            <a href="./movie_introduction.html" class="movie_img long_img_8">
+                                <img src="./image/now_play/now_play_06_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">言葉之庭</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+
+                        <div class="content_box content_box8">
+                            <a href="./movie_introduction.html" class="movie_img img_8">
+                                <img src="./image/now_play/john_wick_1_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 1</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_box9">
+                            <a href="./movie_introduction.html" class="movie_img img_9">
+                                <img src="./image/now_play/ghost_s.jpg"" alt="" />
+                            </a>
+                            <h2 class="content_box_title">鬼滅之刃 劇場版</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+                        <div class="content_box content_long content_long_box9">
+                            <a href="./movie_introduction.html" class="movie_img long_img_9">
+                                <img src="./image/now_play/john_wick_2.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 2</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_long content_long_box10">
+                            <a href="./movie_introduction.html" class="movie_img long_img_10">
+                                <img src="./image/now_play/now_play_04_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">馬拉薩尼亞</h2>
+                            <div class="content_box_text">類型 : 驚悚</div>
+                        </div>
+                        <div class="content_box content_long content_long_box11">
+                            <a href="./movie_introduction.html" class="movie_img long_img_11">
+                                <img src="./image/now_play/now_play_05_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">Fate Stay Night</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+
+                        <div class="content_box content_box10">
+                            <a href="./movie_introduction.html" class="movie_img img_10">
+                                <img src="./image/now_play/west_world_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">西方極樂園</h2>
+                            <div class="content_box_text">類型 : 劇情</div>
+                        </div>
+                        <div class="content_box content_box11">
+                            <a href="./movie_introduction.html" class="movie_img img_11">
+                                <img src="./image/now_play/john_wick_2_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 2</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                        <div class="content_box content_box12">
+                            <a href="./movie_introduction.html" class="movie_img img_12">
+                                <img src="./image/now_play/wick_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">怪胎</h2>
+                            <div class="content_box_text">類型 : 愛情</div>
+                        </div>
+                        <div class="content_box content_long content_long_box12">
+                            <a href="./movie_introduction.html" class="movie_img long_img_12">
+                                <img src="./image/now_play/now_play_03_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">皮面人</h2>
+                            <div class="content_box_text">類型 : 驚悚</div>
+                        </div>
+                        <div class="content_box content_long content_long_box13">
+                            <a href="./movie_introduction.html" class="movie_img long_img_13">
+                                <img src="./image/now_play/ghost_l.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">鬼滅之刃 劇場版</h2>
+                            <div class="content_box_text">類型 : 動畫</div>
+                        </div>
+                        <div class="content_box content_box13">
+                            <a href="./movie_introduction.html" class="movie_img img_13">
+                                <img src="./image/now_play/john_wick_3_s.jpg" alt="" />
+                            </a>
+                            <h2 class="content_box_title">捍衛任務 3</h2>
+                            <div class="content_box_text">類型 : 動作</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ---- footer ---- -->
+        <footer>
+            <div class="footer_box">
+                <div class="footer_cmpName_box">
+                    <h1 class="footer_cmpName">有奸細院股份有限公司</h1>
+                    <h1 class="footer_cmpName">The Cinema</h1>
+                </div>
+                <div class="footer_info_box">
+                    <a href="#" class="footer_info">徵才資訊</a>
+                    <a href="#" class="footer_info">常見問題</a>
+                    <a href="#" class="footer_info">聯絡我們</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--  導覽列 滑動 變透明效果  -->
+        <script src="./js/nav.js"></script>
+    </body>
+</html>

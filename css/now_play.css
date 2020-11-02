@@ -1,0 +1,78 @@
+main {
+    width: 100%;
+}
+.section_1 {
+    width: 90%;
+    margin: 0 auto;
+}
+.movie_img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.content_box {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 20px;
+}
+.content_box > a {
+    /* padding: 5px; */
+    font-size: 0;
+}
+.content_box > h2 {
+    /* padding: 5px; */
+    font-size: 3rem;
+    color: hsla(218, 74%, 25%, 1);
+    font-weight: bold;
+}
+.content_box > div {
+    /* padding: 5px; */
+    font-size: 2.5rem;
+    color: #9e9a99;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid #c4d3e3;
+}
+.content_box:last-child > div {
+    border-bottom: 0px;
+}
+
+.content_long {
+    display: none; /*長型電影海報 先隱藏*/
+}
+
+@media (min-width: 769px) {
+    .content_long {
+        display: block; /*長型電影海報 出現*/
+    }
+
+    .movie_img {
+        width: 300px;
+        font-size: 0;
+    }
+
+    .masonry {
+        max-width: 690px !important;
+        margin: 0 auto;
+    }
+
+    #waterfallArea {
+        max-width: 690px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1160px) {
+    .masonry {
+        max-width: 1028px !important;
+        margin: 0 auto;
+    }
+    #waterfallArea {
+        max-width: 1028px !important;
+        margin: 0 auto;
+    }
+    :root {
+        font-size: 60%;
+    }
+}

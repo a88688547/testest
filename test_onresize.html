@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./vendors/jQuery/js/jquery-3.5.1.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <span id="”info_jb51_net”">請改變瀏覽器視窗大小</span>
+        <script>
+            window.onresize = function () {
+                let width = $(window).width()
+
+                console.log(width)
+
+                if (width > 1200) {
+                    console.log('0 0')
+                }
+            }
+        </script>
+    </body>
+</html>

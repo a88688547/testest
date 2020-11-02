@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+    </head>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .wei-button {
+            position: relative;
+            display: inline-block;
+            padding: 16px 32px;
+            margin: 64px 64px;
+            color: #ff9900;
+            font-size: 32px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 1.5s;
+        }
+
+        .wei-button:hover {
+            /* background-color: #ff9900; */
+            color: black;
+            /* box-shadow: 0 0 5px #ff9900, 0 0 25px #ff9900, 0 0 50px #ff9900, 0 0 250px #ff9900; */
+        }
+
+        .wei-button span {
+            position: absolute;
+            display: block;
+        }
+
+        .wei-button:hover span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background-color: #ff9900;
+            /* background: linear-gradient(90deg, transparent, #ff9900); */
+            /* animation: alternate1 0.5s linear 1; */
+            animation: alternate1 1s;
+        }
+
+        @keyframes alternate1 {
+            0% {
+                left: -100%;
+            }
+            /* 50% {
+                left: -50%;
+            } */
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        .wei-button:hover span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #ff9900;
+            /* background: linear-gradient(180deg, transparent, #ff9900); */
+            animation: alternate2 1s;
+            /* animation: alternate2 0.5s linear 1; */
+            animation-delay: 1s;
+        }
+
+        @keyframes alternate2 {
+            0% {
+                top: -100%;
+            }
+
+            100% {
+                top: 0%;
+            }
+        }
+        /*
+        .wei-button:hover span:nth-child(3) {
+            bottom: 0%;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #ff9900);
+            animation: alternate3 0.5s linear 1;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes alternate3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+
+        .wei-button:hover span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #ff9900);
+            animation: alternate4 0.5s linear 1;
+            animation-delay: 0.375s;
+        }
+
+        @keyframes alternate4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        } */
+        /* .wei-button2 {
+            position: relative;
+            padding: 16px 32px;
+            margin: 64px 64px;
+            color: #ff9900;
+            background-color: black;
+            border: none;
+            font-size: 32px;
+            text-transform: uppercase;
+            transition: 1.5s;
+        }
+
+        .wei-button2:hover {
+            cursor: pointer;
+            color: black;
+            background-color: #ff9900;
+            box-shadow: 0 0 5px #ff9900, 0 0 25px #ff9900, 0 0 50px #ff9900, 0 0 250px #ff9900;
+        }
+
+        .wei-button2::before {
+            content: '';
+            width: 0%;
+            height: 0%;
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            transition: 1s;
+        }
+
+        .wei-button2:hover::before {
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid #ff9900;
+            border-right: 2px solid #ff9900;
+        }
+
+        .wei-button2::after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            transition: 1s;
+        }
+
+        .wei-button2:hover::after {
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #ff9900;
+            border-left: 2px solid #ff9900;
+        } */
+    </style>
+
+    <body>
+        <a class="wei-button" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            click button
+        </a>
+
+        <button class="wei-button2">click button</button>
+    </body>
+</html>

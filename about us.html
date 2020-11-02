@@ -7,7 +7,8 @@
 
         <!-- 載入"reset"檔案 -->
         <link rel="stylesheet" href="./css/reset.css" />
-
+        <!-- ----- 載入jQuery ---- -->
+        <script src="./vendors/jQuery/js/jquery-3.5.1.js"></script>
         <!-- 載入"Noto Sans TC 字型"檔案 -->
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
@@ -28,6 +29,12 @@
         <link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
         <!-- ----導入Awsome icon.css---- -->
         <link rel="stylesheet" href="./vendors/fontawesome-free-5.15.1-web/css/all.css" />
+        <!-- ScrollBar 效果，觸發事件 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <script src="./js/scroolbar.js"></script>
     </head>
     <body>
         <!-- ----導覽列---- -->
@@ -72,7 +79,7 @@
                             <li><a href="">立即訂票</a></li>
                             <li><a href="">現正熱映</a></li>
                             <li><a href="">即將上映</a></li>
-                            <li><a href="">戲院介紹</a></li>
+                            <li><a href="" class="now_page">戲院介紹</a></li>
                             <li><a href="">優惠資訊</a></li>
                         </ul>
                     </div>
@@ -88,8 +95,10 @@
                 </ol>
             </div>
         </div>
+        <!-- 頁面提示 文字 -->
+        <h2 class="page_title">戲院介紹</h2>
+        <!-- ---- 主要內容 ---- -->
         <main>
-            <h2 class="page_title">戲院介紹</h2>
             <div class="banner"></div>
 
             <div class="content_box">
@@ -98,25 +107,25 @@
                         <div class="menu_title">快速選單</div>
                         <ul class="menu_list">
                             <li>
-                                <a href="#">
+                                <a id="icon01" href="#">
                                     <img src="./image/about_us/info_01@2x.png" alt="戲院資訊" />
                                     <span>戲院資訊</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" id="icon02">
                                     <img src="./image/about_us/info_02@2x.png" alt="交通位置與停車資訊" />
                                     <span>交通位置與停車資訊</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" id="icon04">
                                     <img src="./image/about_us/info_04@2x.png" alt="影廳設施" />
                                     <span>影廳設施</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" id="icon05">
                                     <img src="./image/about_us/info_05@2x.png" alt="影城須知" />
                                     <span>戲院須知</span></a
                                 >
@@ -125,7 +134,7 @@
                     </div>
                 </aside>
                 <div class="main_box">
-                    <section class="section section_1">
+                    <section id="key01" class="section section_1">
                         <div class="section_1_left_box">
                             <h3 class="section_1_title">戲院簡介</h3>
                             <div class="section_1_info">
@@ -163,7 +172,8 @@
                             <div><img src="./image/about_us/bade_ev_04.png" alt="04" /></div>
                         </div>
                     </section>
-                    <section class="section section_2">
+
+                    <section class="section section_2" id="key02">
                         <div class="section_title">
                             <div class="section_title_img">
                                 <img src="./image/about_us/info_02@2x.png" alt="交通位置及停車資訊" />
@@ -232,7 +242,7 @@
                             </ol>
                         </div>
                     </section>
-                    <section class="section section_3">
+                    <section class="section section_3" id="key03">
                         <div class="section_title">
                             <div class="section_title_img">
                                 <img src="./image/about_us/info_03@2x.png" alt="票價資訊" />
@@ -342,7 +352,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section section_4">
+                    <section class="section section_4" id="key04">
                         <div class="section_title">
                             <div class="section_title_img">
                                 <img src="./image/about_us/info_04@2x.png" alt="影廳設施" />
@@ -411,7 +421,7 @@
                             </ol>
                         </div>
                     </section>
-                    <section class="section section_5">
+                    <section class="section section_5" id="key05">
                         <div class="section_title">
                             <div class="section_title_img">
                                 <img src="./image/about_us/info_05@2x.png" alt="戲院須知" />

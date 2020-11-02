@@ -1,0 +1,496 @@
+/* 全域 */
+main {
+    width: 100%;
+}
+
+/* 第一區域 */
+.section_1 {
+    width: 90%;
+    margin: 0 auto;
+}
+.section_1_content_box {
+}
+.banner {
+    width: 100%;
+    background-image: url(../image/movie_introduction/john_wick_2_banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+.movie_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.movie_info {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-color: rgba(196, 211, 227);
+    padding: 5px;
+}
+.movie_title {
+    font-size: 3rem;
+    color: #464f69;
+    font-weight: bold;
+}
+.eh_title {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.842);
+}
+.info {
+    font-size: 2.3rem;
+}
+.tomore {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+}
+.gray {
+    color: #9e9a99;
+}
+.hot {
+    color: red;
+    font-weight: bold;
+    font-size: 3rem;
+}
+/* 第一區域 RWD 變化 */
+@media (min-width: 1200px) {
+    .section_1_content_box {
+        display: flex;
+        background-image: url(../image/movie_introduction/john_wick_2_banner.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .banner {
+        width: 50%;
+        background-image: url(none);
+    }
+
+    .movie_img {
+        width: 80%;
+    }
+
+    .movie_info {
+        width: 50%;
+        background-color: rgba(196, 211, 227, 0.8);
+        padding: 2% 15px;
+    }
+    .tomore {
+        /*恢復成預設值  */
+        white-space: normal;
+        overflow: auto;
+        text-overflow: initial;
+        display: block;
+        width: 100%;
+    }
+    .text {
+        font-size: 2rem;
+    }
+}
+/* 第二區域 */
+.section_2 {
+    width: 90%;
+    max-width: 1520px;
+    margin: 2% auto;
+}
+.section_2 > video {
+    width: 100%;
+}
+/* 第三區域 */
+.section_3 {
+    width: 90%;
+    margin: 2% auto;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.section_3 > h4 {
+    font-size: 2.5rem;
+    color: #464f69;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.movie_time_box:nth-of-type(1) {
+    border-bottom: 1px solid #473e4a;
+}
+.movie_time_box:nth-of-type(2) {
+    margin-top: 2%;
+}
+
+.day {
+    font-size: 2.3rem;
+    color: #8299b5;
+    font-weight: bold;
+    padding: 5px;
+}
+.time_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.time_list > a {
+    font-size: 2rem;
+    display: block;
+    width: 45%;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6593dc;
+    border-radius: 30px;
+    margin: 2.5%;
+    color: #fff;
+    font-weight: bold;
+}
+/* 第三區域  RWD 變化 */
+@media (min-width: 576px) {
+    .time_list {
+        justify-content: flex-start;
+    }
+
+    .time_list > a {
+        width: 30%;
+        margin: 1.6%;
+    }
+}
+@media (min-width: 768px) {
+    .time_list > a {
+        width: 22%;
+        margin: 1.5%;
+        opacity: 0.6;
+    }
+    .time_list > a:hover {
+        opacity: 1;
+    }
+}
+@media (min-width: 991px) {
+    .time_list > a {
+        width: 18%;
+        margin: 1%;
+    }
+}
+
+/* 第四區域 */
+.section_4 {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.member {
+    margin-bottom: 10px;
+}
+.member:nth-child(2n-1) {
+    background-color: #c4d3e3;
+}
+
+.member:nth-child(2n) {
+    background-color: rgba(196, 211, 227, 0.3);
+}
+
+.user_img {
+    width: 50%;
+    margin: 10px auto;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user_img > img {
+    border-radius: 50%;
+}
+
+.member_talk_box {
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.member_talk_content_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* padding: 5px; */
+}
+.comment_title {
+    font-size: 2.5rem;
+    color: #464f69;
+    font-weight: 600;
+    width: 30%;
+    border-bottom: #6593dc 2px solid;
+    padding: 5px;
+}
+.comment_num {
+    width: 70%;
+    text-align: right;
+    border-bottom: rgba(101, 147, 220, 0.3) 2px solid;
+    font-size: 2rem;
+    padding: 5px;
+    color: #9e9a99;
+}
+.member_talk_content_2 {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    font-size: 2.5rem;
+    padding: 5px;
+}
+.filter_icon_box {
+    display: flex;
+
+    width: 100%;
+}
+.filter_icon_box > div {
+    padding: 5px;
+    /* width: 25%; */
+    letter-spacing: 1px;
+    line-height: 1.25;
+    cursor: pointer;
+}
+.filter_icon_box > div:nth-of-type(1) {
+    width: 20%;
+}
+.filter_icon_box > div:nth-of-type(2) {
+    width: 30%;
+}
+.filter_icon_box > div:nth-of-type(3) {
+    width: 30%;
+}
+.filter_icon_box > div:nth-of-type(4) {
+    width: 20%;
+}
+.filter_icon_box > div:nth-of-type(2),
+.filter_icon_box > div:nth-of-type(3),
+.filter_icon_box > div:nth-of-type(4) {
+    color: #c4d3e3;
+}
+
+.filterbtn {
+    /* text-align: center; */
+}
+
+.filter_on {
+    color: #8299b5 !important;
+}
+
+.iwanttext {
+    display: inline-block;
+    /* width: 100%; */
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #6593dc;
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.comment_text_1 {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comment_text_1_left {
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 83%;
+}
+.left_1 {
+    width: 100%;
+}
+.left_1 > div:first-child {
+    padding: 5px;
+}
+
+.star_img > i {
+    /* padding: 5px; */
+}
+
+.left_1,
+.left_2 {
+    display: flex;
+    align-items: center;
+}
+.left_2 {
+    width: 100%;
+
+    color: hsla(218, 74%, 25%, 1);
+}
+.comment_img_box {
+    padding: 5px;
+}
+.left_2 > div {
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+.comment_text_1_right {
+    text-align: right;
+    width: 17%;
+}
+.comment_text_2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #473e4a;
+    padding: 5px;
+}
+.comment_time {
+    padding: 5px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #9e9a99;
+}
+.report {
+    padding: 5px;
+    color: hsla(218, 74%, 25%, 1);
+    cursor: pointer;
+}
+
+.member_talk_content_4 {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.member_talk_content_4 > span {
+    padding: 5px;
+    background-color: #6593dc;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50px;
+}
+
+@media (min-width: 576px) {
+    .member {
+        display: flex;
+    }
+    .user_img {
+        width: 150px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user_img > img {
+        width: 100%;
+        /* height: 100px; */
+    }
+    .comment_text_box {
+        width: calc(100% - 150px);
+    }
+}
+@media (min-width: 768px) {
+    .user_img {
+        width: 150px;
+        /* max-width: 100px; */
+    }
+
+    .comment_text_box {
+        width: calc(100% - 150px);
+    }
+    .member_talk_content_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .filter_icon_box {
+        width: 80%;
+    }
+    .iwanttext {
+        width: 20%;
+        text-align: center;
+        margin: 0 0 0 0;
+        opacity: 0.6;
+    }
+    .iwanttext:hover {
+        opacity: 1;
+    }
+    .filter_icon_box > div {
+        margin-right: 20px;
+    }
+
+    .filter_icon_box > div:nth-of-type(1) {
+        width: auto;
+    }
+    .filter_icon_box > div:nth-of-type(2) {
+        width: auto;
+    }
+    .filter_icon_box > div:nth-of-type(3) {
+        width: auto;
+    }
+    .filter_icon_box > div:nth-of-type(4) {
+        width: auto;
+    }
+
+    .left_2 > div {
+        opacity: 0.6;
+    }
+    .left_2 > div:hover {
+        opacity: 1;
+    }
+    .report {
+        opacity: 0.6;
+    }
+    .report:hover {
+        opacity: 1;
+    }
+    .filterbtn:hover {
+        color: #8299b5 !important;
+    }
+    .member_talk_content_4 > span {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .member_talk_content_4 > span:hover {
+        opacity: 1;
+    }
+}
+@media (min-width: 1200px) {
+    .user_img {
+        width: 200px;
+    }
+
+    .comment_text_box {
+        width: calc(100% - 200px);
+    }
+}
+
+/* 第五區域 推薦電影 */
+.section_5 {
+    width: 90%;
+    margin: 50px auto;
+}
+.section_5 > h4 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+    color: #464f69;
+    font-weight: 400;
+}
+
+.slick_slick {
+    display: block;
+    margin: 20px;
+    transition: 1s;
+    opacity: 0.6;
+}
+.slick_slick:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.slick-center {
+    transform: scale(1.08);
+    opacity: 1;
+}
