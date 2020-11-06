@@ -152,9 +152,9 @@ header {
 
 .hamburg_nav {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
     z-index: 10;
     display: none;
 }
@@ -217,9 +217,9 @@ header {
 
 .member_nav {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
     z-index: 10;
     display: none;
 }

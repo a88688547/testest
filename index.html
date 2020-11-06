@@ -24,6 +24,17 @@
         <link rel="stylesheet" href="./css/footer.css" />
         <!-- ----導入Awsome icon.css---- -->
         <link rel="stylesheet" href="./vendors/fontawesome-free-5.15.1-web/css/all.css" />
+        <!-- AOS 套件 -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- 啟動 AOS -->
+        <script>
+            $(document).ready(function () {
+                AOS.init()
+            })
+        </script>
+
         <!--  第五區 SLICK 輪播效果  -->
         <link rel="stylesheet" type="text/css" href="./vendors/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
@@ -89,7 +100,13 @@
                 </div>
             </section>
             <!-- ---- 分類說明 分隔線 ---- -->
-            <div class="block_box">
+            <div
+                class="block_box"
+                data-aos="flip-down"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="1000"
+            >
                 <div class="block_line block_line_left"></div>
                 <h2 class="section_title">本周熱門</h2>
                 <div class="block_line block_line_right"></div>
@@ -136,7 +153,13 @@
             </section>
             <!-- ---- 分類說明 分隔線 ---- -->
 
-            <div class="block_box">
+            <div
+                class="block_box"
+                data-aos="flip-down"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="1000"
+            >
                 <div class="block_line block_line_left"></div>
                 <h2 class="section_title">即將上映</h2>
                 <div class="block_line block_line_right"></div>
@@ -144,7 +167,14 @@
             <!-- ---- 即將上映 ---- -->
             <section class="section section_3">
                 <div class="section_3_box">
-                    <a href="./movie_introduction.html" class="section_3_left_box">
+                    <a
+                        href="./movie_introduction.html"
+                        class="section_3_left_box"
+                        data-aos="zoom-in-right"
+                        data-aos-once="true"
+                        data-aos-offset="100"
+                        data-aos-duration="1000"
+                    >
                         <div class="s3_left_movie_info">
                             <h3>翻供</h3>
                             <div class="info">主要演員：申惠善、裴宗玉</div>
@@ -162,7 +192,14 @@
                         </div>
                     </a>
                     <div class="section_3_right_box">
-                        <a href="./movie_introduction.html" class="s3_right_item_box">
+                        <a
+                            href="./movie_introduction.html"
+                            class="s3_right_item_box"
+                            data-aos="zoom-in-left"
+                            data-aos-once="true"
+                            data-aos-offset="100"
+                            data-aos-duration="1000"
+                        >
                             <div class="s3_right_movie_img">
                                 <img src="./image/index/index_commingsoon_02.jpg" alt="commingsoon_02" />
                             </div>
@@ -184,7 +221,14 @@
                                 <h3>可不可以你也剛好喜歡我</h3>
                             </div>
                         </a>
-                        <a href="./movie_introduction.html" class="s3_right_item_box">
+                        <a
+                            href="./movie_introduction.html"
+                            class="s3_right_item_box"
+                            data-aos="zoom-in-right"
+                            data-aos-once="true"
+                            data-aos-offset="100"
+                            data-aos-duration="1000"
+                        >
                             <div class="s3_right_movie_img">
                                 <img src="./image/index/index_commingsoon_03.jpg" alt="commingsoon_03" />
                             </div>
@@ -204,7 +248,14 @@
                                 <h3>天劫倒數</h3>
                             </div>
                         </a>
-                        <a href="./movie_introduction.html" class="s3_right_item_box">
+                        <a
+                            href="./movie_introduction.html"
+                            class="s3_right_item_box"
+                            data-aos="zoom-in-left"
+                            data-aos-once="true"
+                            data-aos-offset="100"
+                            data-aos-duration="1000"
+                        >
                             <div class="s3_right_movie_info order_2">
                                 <h3>皮面人</h3>
                                 <div class="info">主要演員：史帝芬杜夫、莉莉泰勒</div>
@@ -223,7 +274,14 @@
                                 <img src="./image/index/index_commingsoon_04.jpg" alt="commingsoon_04" />
                             </div>
                         </a>
-                        <a href="./movie_introduction.html" class="s3_right_item_box">
+                        <a
+                            href="./movie_introduction.html"
+                            class="s3_right_item_box"
+                            data-aos="zoom-in-right"
+                            data-aos-once="true"
+                            data-aos-offset="100"
+                            data-aos-duration="1000"
+                        >
                             <div class="s3_right_movie_info">
                                 <h3>紫羅蘭永恆花園</h3>
                                 <div class="info">主要演員：石川由依、浪川大輔</div>
@@ -247,7 +305,13 @@
                 <a href="./comming soon.html" class="more_btn more_btn_3"> More... </a>
             </section>
             <!-- ---- 分類說明 分隔線 ---- -->
-            <div class="block_box">
+            <div
+                class="block_box"
+                data-aos="flip-down"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="1000"
+            >
                 <div class="block_line block_line_left"></div>
                 <h2 class="section_title">戲院介紹</h2>
                 <div class="block_line block_line_right"></div>
@@ -255,7 +319,12 @@
             <!-- ---- 戲院環境介紹 ---- -->
             <section class="section section_4">
                 <div class="section_4_box">
-                    <div class="environment_img environment_img_1">
+                    <div
+                        class="environment_img environment_img_1"
+                        data-aos="fade-right"
+                        data-aos-once="true"
+                        data-aos-duration="2000"
+                    >
                         <h4 class="environment_title environment_title_1">室內環境</h4>
                         <img src="./image/index/environment_01.jpg" alt="environment_01" />
 
@@ -263,7 +332,12 @@
                             以高品質服務為主要訴求，提供影迷頂級奢華的觀影享受，從進入影城大廳那一刻起，便能感受到皇家影城尊爵華麗的氛圍，每座皇家影城皆提供舒適的沙發休息區及吧台服務，將精緻的觀影體驗全方位延伸到廳外，讓頂級服務不只存在於影廳內，在影廳的每一個角落都能享受愜意的休閒娛樂時光。
                         </div>
                     </div>
-                    <div class="environment_img environment_img_2">
+                    <div
+                        class="environment_img environment_img_2"
+                        data-aos="fade-left"
+                        data-aos-once="true"
+                        data-aos-duration="2000"
+                    >
                         <h4 class="environment_title environment_title_2">IMAX影廳</h4>
                         <img src="./image/index/environment_02.jpg" alt="environment_02" />
 
@@ -277,7 +351,13 @@
             </section>
             <a href="./about us.html" class="more_btn more_btn_4"> More... </a>
             <!-- ---- 分類說明 分隔線 ---- -->
-            <div class="block_box">
+            <div
+                class="block_box"
+                data-aos="flip-down"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="1000"
+            >
                 <div class="block_line block_line_left"></div>
                 <h2 class="section_title">優惠資訊</h2>
                 <div class="block_line block_line_right"></div>
@@ -305,7 +385,13 @@
             </section>
             <!-- ---- 分類說明 分隔線 ---- -->
 
-            <div class="block_box">
+            <div
+                class="block_box"
+                data-aos="flip-down"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="1000"
+            >
                 <div class="block_line block_line_left"></div>
                 <h2 class="section_title">交通資訊</h2>
                 <div class="block_line block_line_right"></div>
@@ -344,6 +430,7 @@
         <script src="./js/nav.js"></script>
         <!--  第二區 3D輪播效果  -->
         <script src="./js/slider.js"></script>
+
         <!-- 第五區 SLICK 輪播效果 -->
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
