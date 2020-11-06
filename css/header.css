@@ -166,7 +166,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #0496ff;
+    background-color: #c4d3e3;
     display: none;
 }
 @media (max-width: 374px) {

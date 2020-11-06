@@ -16,7 +16,7 @@
     align-items: center;
 }
 .breadcrumb_list > li {
-    font-size: 1.6rem;
+    font-size: 16px;
 }
 
 .breadcrumb_list > li::before {
@@ -30,7 +30,7 @@
 
 .breadcrumb_link {
     color: #c3d3e3;
-    font-size: 1.6rem;
+    font-size: 16px;
 }
 .breadcrumb_link:hover {
     color: #1b3766;

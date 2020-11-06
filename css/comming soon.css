@@ -17,7 +17,7 @@
     display: block;
 }
 .movie_img {
-    max-width: 485px;
+    /* max-width: 485px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,7 +30,7 @@
     margin: 0 auto;
     letter-spacing: 2px;
     line-height: 1.5;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@
 
 .movie_time {
     color: #473e4a;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 .movie_title > h3 {
@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 /* ---- RWD 變化 ----- */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
     .section_1_box {
         display: flex;
         flex-wrap: wrap;
@@ -60,6 +60,12 @@
     }
     .section_1_item {
         width: calc((100% - 10px) / 2);
+    }
+    .movie_time {
+        font-size: 2.5rem;
+    }
+    .movie_info {
+        font-size: 2rem;
     }
 }
 /* 大於 1200px 之後 切換成另一個畫面呈現 */
@@ -78,6 +84,7 @@
     }
     .movie_info {
         margin-top: 25px;
+        font-size: 2rem;
     }
 }
 .section_2 {

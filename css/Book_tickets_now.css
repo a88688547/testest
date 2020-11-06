@@ -43,7 +43,7 @@ main {
 .item_info {
     letter-spacing: 1px;
     line-height: 1.5;
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     padding: 0 5%;
     color: #473e4a;
 }
@@ -93,10 +93,10 @@ main {
     }
     .item_info {
         /* padding: 0 10px; */
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .movie_title {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 }
 @media (min-width: 420px) {

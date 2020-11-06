@@ -60,6 +60,7 @@ main {
         width: 100%;
         font-size: 2.7rem;
         text-align: center;
+        background-color: #f8bf4e;
     }
     .activity_title_info_left {
         width: 40%;
@@ -129,7 +130,7 @@ main {
     margin: 0 auto;
     padding: 5px 0;
     color: #9e9a99;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 @media (min-width: 625px) {
     .s3_activity_box {

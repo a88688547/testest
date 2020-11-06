@@ -171,40 +171,56 @@
 }
 
 .s3_left_movie_info {
+    padding: 5px;
+    width: 100%;
     position: absolute;
-    height: 40%;
     top: 100%;
     opacity: 0;
-    background-color: #1b3766;
+    background-color: #8299b5;
     transition: 0.5s;
 }
 @media (max-width: 1475px) {
-    .s3_left_movie_info {
-        height: 70%;
+    .s3_left_movie_info > h3 {
+        font-size: 21px !important;
+    }
+    .s3_left_movie_info > div {
+        font-size: 18px !important;
     }
 }
 
 @media (max-width: 920px) {
     .s3_left_movie_info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 50%;
         position: relative;
         opacity: 1;
         top: 0;
-        align-self: stretch;
+        /* align-self: stretch; */
         height: auto;
+        justify-content: center;
     }
+    .s3_left_movie_info > h3 {
+        align-self: center;
+        /* font-size: 28px !important; */
+    }
+    /* .s3_left_movie_info > div {
+        font-size: 20px !important;
+    } */
 }
 
 .s3_left_movie_info > h3 {
-    color: #568fea;
-    font-size: 3rem;
+    color: #473e4a;
+    font-size: 2rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px 5px;
+    font-weight: bold;
     /* margin-bottom: 10px; */
 }
 .s3_left_movie_info > div {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 16px;
     line-height: 1.3;
     padding: 5px;
     letter-spacing: 1px;
@@ -269,9 +285,22 @@
     font-size: 0;
 }
 .s3_right_movie_info {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    background-color: #1b3766;
-    align-self: stretch;
+    background-color: #8299b5;
+    align-items: flex-start;
+    /* align-self: stretch; */
+    justify-content: center;
+}
+.info_long {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
 
 @media (max-width: 920px) {
@@ -288,15 +317,17 @@
 }
 
 .s3_right_movie_info > h3 {
-    font-size: 1.8rem;
-    color: #568fea;
-    padding: 5px;
+    font-size: 2rem;
+    color: #473e4a;
+    padding: 10px 5px;
     text-align: center;
+    font-weight: bold;
+    align-self: center;
 }
 
 .s3_right_movie_info > div {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 16px;
     line-height: 1.4;
     padding: 5px;
     letter-spacing: 2px;
@@ -346,37 +377,37 @@
 @media (max-width: 920px) {
     .s3_right_movie_info > h3,
     .s3_left_movie_info > h3 {
-        font-size: 4rem;
+        font-size: 3rem !important;
         padding: 10px 0;
     }
 
     .s3_right_movie_info > div,
     .s3_left_movie_info > div {
-        font-size: 3rem;
+        font-size: 2.8rem !important;
     }
 }
-@media (max-width: 810px) {
+@media (max-width: 767px) {
     .s3_right_movie_info > h3,
     .s3_left_movie_info > h3 {
-        font-size: 3rem;
         padding: 10px 0;
+        font-size: 2.8rem !important;
     }
 
     .s3_right_movie_info > div,
     .s3_left_movie_info > div {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 }
 @media (max-width: 630px) {
     .s3_right_movie_info > h3,
     .s3_left_movie_info > h3 {
-        font-size: 3rem;
+        /* font-size: 2.6rem !important; */
         padding: 10px 0;
     }
 
     .s3_right_movie_info > div,
     .s3_left_movie_info > div {
-        font-size: 2rem;
+        /* font-size: 2.1rem !important; */
     }
 }
 
@@ -391,13 +422,13 @@
     }
     .s3_right_movie_info > h3,
     .s3_left_movie_info > h3 {
-        font-size: 2.5rem;
+        /* font-size: 2.4rem !important; */
         padding: 5px 0;
     }
 
     .s3_right_movie_info > div,
     .s3_left_movie_info > div {
-        font-size: 1.5rem;
+        /* font-size: 1.9rem !important; */
         padding: 3px;
     }
 }
@@ -434,12 +465,12 @@
         }
         .s3_right_movie_info > h3,
         .s3_left_movie_info > h3 {
-            font-size: 3rem;
+            /* font-size: 2.2rem !important; */
             padding: 10px 0;
         }
         .s3_right_movie_info > div,
         .s3_left_movie_info > div {
-            font-size: 2rem;
+            /* font-size: 1.7rem !important; */
             padding: 5px;
         }
     }
@@ -452,13 +483,19 @@
 
         .s3_right_movie_info > h3,
         .s3_left_movie_info > h3 {
-            font-size: 3rem;
-            padding: 7px 0;
+            /* font-size: 3rem; */
+            padding: 5px 0;
+            line-height: 1.2 !important;
+            letter-spacing: 1px !important;
         }
         .s3_right_movie_info > div,
         .s3_left_movie_info > div {
-            font-size: 2rem;
+            /* font-size: 2.2rem; */
             padding: 2px;
+            line-height: 1.2 !important;
+            letter-spacing: 1px !important;
+            /* line-height: 1.2;
+            letter-spacing: 1px; */
         }
     }
 }

@@ -71,6 +71,11 @@ main {
     font-size: 1.6rem;
     opacity: 0.6;
 }
+.menu_list > li > a > img {
+    width: 60px;
+    height: 60px;
+}
+
 .menu_list > li > a:hover {
     opacity: 1;
 }
@@ -107,7 +112,7 @@ main {
 }
 
 .section_1_info {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     letter-spacing: 2px;
     line-height: 1.5;
     padding: 5px;
@@ -116,6 +121,7 @@ main {
 }
 
 .section_1_text {
+    font-size: 1.9rem;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -128,6 +134,13 @@ main {
     width: 30px;
 }
 /* 第一區域  戲院簡介 RWD 變化 */
+
+@media (min-width: 992px) {
+    .section_1_info {
+        font-size: 2rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .content_box {
         display: flex;
@@ -195,20 +208,20 @@ main {
 }
 .h4_title_box > h4 {
     color: #473e4a;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     padding: 5px;
     font-weight: 500;
 }
 .section_2_text_box {
 }
 .s2_info_title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #464f69;
     padding: 5px;
     font-weight: 500;
 }
 .s2_info_text {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     color: #809ab4;
     line-height: 1.5;
     letter-spacing: 2px;
@@ -229,10 +242,10 @@ main {
 
 .section_2_info_box > ol {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .section_2_info_box > ol > li {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     color: #809ab4;
     line-height: 1.5;
     letter-spacing: 2px;
@@ -305,23 +318,29 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 .s3_type_box > a {
     text-decoration: none;
-    width: 25%;
+    width: 30%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.7rem;
     color: #464f69;
-    opacity: 1;
+    opacity: 0.6;
     border-bottom: 1px solid #464f69;
     margin-right: 10px;
+    cursor: pointer;
 }
 .s3_type_box > a:hover {
     opacity: 1;
 }
+
+.s3_type_on {
+    opacity: 1 !important;
+}
+
 .s3_ticket_box {
-    display: flex;
+    display: none;
     flex-direction: column;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -329,6 +348,10 @@ main {
     overflow: hidden;
     overflow-x: auto;
 }
+.s3_ticket_box_on {
+    display: flex;
+}
+
 .s3_ticket_box > div {
     padding: 5px;
 }
@@ -337,6 +360,10 @@ main {
     align-items: center;
     min-width: 600px;
     /* width: 1500px; */
+}
+.ticket_sp {
+    display: flex;
+    align-items: center;
 }
 .ticket_1 {
     width: 15%;
@@ -357,13 +384,35 @@ main {
     background-color: #c4d3e3;
 }
 .ticket_box1 > div {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 .ticket_box3,
 .ticket_box5,
 .ticket_box7 {
     background-color: #e6f0f6;
 }
+
+.ticket_1_sp,
+.ticket_2_sp,
+.ticket_3_sp {
+    width: calc(100% / 3);
+}
+.ticket_2_sp,
+.ticket_3_sp {
+    text-align: center;
+}
+
+.ticket_1_sp {
+    margin-left: 10px;
+}
+
+.ticket_box2,
+.ticket_box3,
+.ticket_box4,
+.ticket_box5 {
+    font-size: 2.3rem;
+}
+
 .ticket_2,
 .ticket_3,
 .ticket_4,
@@ -373,7 +422,7 @@ main {
     text-align: center;
 }
 .ticket_info {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
 }
 /* 各種票種注意事項 */
 .s3_ticket_note_box {
@@ -389,9 +438,9 @@ main {
 }
 .s3_ticket_note_info_box {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .s3_ticket_note_info_box > div {
     /* margin: 5px 0px; */
@@ -399,10 +448,10 @@ main {
     margin-left: 10px;
 }
 .s3_ticket_note_info_1 {
-    width: 20%;
+    width: 25%;
 }
 .s3_ticket_note_info_2 {
-    width: 80%;
+    width: 75%;
 }
 .s3_ticket_note_info_box:nth-child(2n-1) {
     background-color: #e6f0f6;
@@ -412,7 +461,7 @@ main {
 
 @media (min-width: 1200px) {
     .s3_type_box > a {
-        opacity: 0.6;
+        /* opacity: 0.6; */
     }
 }
 /* ---- 第四區域  影廳設施 -----*/
@@ -425,15 +474,17 @@ main {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+
     margin: 10px 0;
 }
+
 .equipment_img {
     /* padding: 10px; */
     margin: 10px auto;
     width: 90%;
     height: 100%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     display: block;
     text-decoration: none;
     color: #809ab4;
@@ -451,23 +502,23 @@ main {
 }
 
 .chair_box > div:first-child {
-    width: 30%;
+    width: 20%;
     text-align: center;
 }
 .chair_box > div:nth-child(2) {
-    width: 70%;
+    width: 80%;
 }
 .chair_box1 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 
 .chair_box2 {
     background-color: #e6f0f6;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 .chair_title {
     background-color: #c4d3e3;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 400;
     margin-top: 10px;
@@ -485,10 +536,10 @@ main {
 }
 .Barrier-free > ol {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 25px;
     letter-spacing: 1px;
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 .Barrier-free > ol > li {
     padding: 5px;
@@ -523,10 +574,10 @@ main {
 }
 .Notice_list {
     list-style: disc;
-    margin-left: 20px;
-    letter-spacing: 1px;
+    margin-left: 25px;
+    letter-spacing: 2px;
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     padding: 5px;
 }
 
