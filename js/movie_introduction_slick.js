@@ -51,4 +51,9 @@ $(document).ready(function () {
             },
         ],
     })
+    // 更多評論 的切換 按鈕
+    $('#more').click(function () {
+        $(this).toggleClass('more_on')
+        $('.member_talk_content_3_more').slideToggle()
+    })
 })

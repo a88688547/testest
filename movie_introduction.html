@@ -15,6 +15,8 @@
         />
         <!-- 載入"導覽列"檔案 -->
         <link rel="stylesheet" href="./css/header.css" />
+        <!-- 載入 light BOX js -->
+        <script src="./js/light_box.js"></script>
         <!-- 載入"All 通用設定"檔案 -->
         <link rel="stylesheet" href="./css/all.css" />
         <!-- 載入"本頁"檔案 -->
@@ -59,14 +61,14 @@
                     <div class="logo_img"><img src="./image/logo.png" alt="logo_img" /></div>
                     <h1 class="logo_title">The Cinema</h1>
                 </a>
-                <a href="" class="member_btn">
+                <a class="member_btn">
                     <i class="fas fa-user fa-3x"></i>
                 </a>
                 <nav class="navBar">
                     <div class="nav_top">
                         <ul class="ul_box ul_box_1">
-                            <li><a href="">註冊會員</a></li>
-                            <li><a href="">會員登入</a></li>
+                            <li><a class="signin">註冊會員</a></li>
+                            <li><a class="login">會員登入</a></li>
                         </ul>
                     </div>
                     <div class="nav_bot">
@@ -79,6 +81,28 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+            <div class="light_box">
+                <form action="" class="form_box">
+                    <div class="close_img"><img src="./image/close.png" alt="close" /></div>
+                    <div>
+                        <div class="type_box">
+                            <div class="signinbtn">會員註冊</div>
+                            <div class="loginbtn type_on">會員登入</div>
+                        </div>
+                        <div class="account_box">
+                            <label for="account">帳號 :</label>
+                            <input type="text" id="account" placeholder="帳號提示:ced101" name="account" />
+                            <div class="feedback feedback_acc"></div>
+                        </div>
+                        <div class="password_box">
+                            <label for="password">密碼 : </label>
+                            <input type="password" name="password" id="password" placeholder="密碼提示:ced101" />
+                            <div class="feedback feedback_pass"></div>
+                        </div>
+                        <button type="button" id="login">登入</button>
+                    </div>
+                </form>
             </div>
         </header>
         <!-- ----麵包屑 breadcrumb---- -->
@@ -213,8 +237,7 @@
                                 </div>
 
                                 <div class="comment_text_2">
-                                    不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
-                                    殺手的世界被拍的好迷人，不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
+                                    是一部愛米格魯而展開的復仇電影，偶爾的笑點，但是劇情瞎，殺人片段音樂還不錯，第一次看到在夜店殺人算是滿優雅，氣氛佳，燈光不錯，殺人一般般，如果要花錢，或不是他的粉絲，不用進電影院看，重劇情這部沒辦法滿足，私邢教育是不錯選擇。
                                 </div>
                                 <div class="comment_time">發表時間：2019-01-09 17:02:55</div>
                             </div>
@@ -249,11 +272,8 @@
                                     </div>
                                 </div>
 
-                                <div class="comment_text_2">
-                                    不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
-                                    殺手的世界被拍的好迷人，不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
-                                </div>
-                                <div class="comment_time">發表時間：2019-01-09 17:02:55</div>
+                                <div class="comment_text_2">很好看，不拖泥帶水，劇情緊湊，連配角都演的很好</div>
+                                <div class="comment_time">發表時間：2018-12-24 00:47:57</div>
                             </div>
                         </div>
                         <div class="member member_3">
@@ -287,14 +307,123 @@
                                 </div>
 
                                 <div class="comment_text_2">
-                                    不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
-                                    殺手的世界被拍的好迷人，不拖泥帶水，一槍一顆頭，從頭到尾就沒有在開玩笑的～
+                                    還好我沒去戲院看，除了劇情不合理外，很多地方可以跳過，純粹看槍戰就好，個人還是喜歡小馬哥的帥。
                                 </div>
-                                <div class="comment_time">發表時間：2019-01-09 17:02:55</div>
+                                <div class="comment_time">發表時間：2018-12-12 22:38:0</div>
                             </div>
                         </div>
-                        <div class="member_talk_content_4"><span>更多評論...</span></div>
                     </div>
+                    <div class="member_talk_content_3 member_talk_content_3_more">
+                        <div class="member member_1">
+                            <div class="user_img"><img src="./image/movie_introduction/head_01.jpg" alt="user1" /></div>
+                            <div class="comment_text_box">
+                                <div class="comment_text_1">
+                                    <div class="comment_text_1_left">
+                                        <div class="left_1">
+                                            <div>網友評分：</div>
+                                            <div class="star_img">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="left_2">
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-up fa">讚</i>
+                                            </div>
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-down fa">噓</i>
+                                            </div>
+                                            <div>回應評論</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment_text_1_right">
+                                        <div class="report">檢舉</div>
+                                    </div>
+                                </div>
+
+                                <div class="comment_text_2">
+                                    私刑教育片，除了甩帥，其他真的一般般，腳本大綱還可以，最強退休殺手，回來爆私人仇恨，然後萬槍打不死他，他可以槍槍中把，的爽片。有點像是90年代香港的小馬哥片，就排場大了些，畫面美麗了點。但是劇情鬆散、槍仗也很假，導演應該不夠強。還有許多不合理，為了劇情而劇情。大致上就是男主角甩帥的黑社會槍戰片
+                                </div>
+                                <div class="comment_time">發表時間：2018-12-02 17:02:55</div>
+                            </div>
+                        </div>
+                        <div class="member member_2">
+                            <div class="user_img"><img src="./image/movie_introduction/head_02.jpg" alt="user1" /></div>
+                            <div class="comment_text_box">
+                                <div class="comment_text_1">
+                                    <div class="comment_text_1_left">
+                                        <div class="left_1">
+                                            <div>網友評分：</div>
+                                            <div class="star_img">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="left_2">
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-up fa">讚</i>
+                                            </div>
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-down fa">噓</i>
+                                            </div>
+                                            <div>回應評論</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment_text_1_right">
+                                        <div class="report">檢舉</div>
+                                    </div>
+                                </div>
+
+                                <div class="comment_text_2">
+                                    基諾李維真的超帥又超酷的他身材真好穿西裝真的帥酷斃了愛死男主角又好看的殺手片
+                                </div>
+                                <div class="comment_time">發表時間：2018-11-20 17:02:55</div>
+                            </div>
+                        </div>
+                        <div class="member member_3">
+                            <div class="user_img"><img src="./image/movie_introduction/head_03.jpg" alt="user1" /></div>
+                            <div class="comment_text_box">
+                                <div class="comment_text_1">
+                                    <div class="comment_text_1_left">
+                                        <div class="left_1">
+                                            <div>網友評分：</div>
+                                            <div class="star_img">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="left_2">
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-up fa">讚</i>
+                                            </div>
+                                            <div class="comment_img_box">
+                                                <i class="far fa-thumbs-down fa">噓</i>
+                                            </div>
+                                            <div>回應評論</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment_text_1_right">
+                                        <div class="report">檢舉</div>
+                                    </div>
+                                </div>
+
+                                <div class="comment_text_2">
+                                    很傻眼的開頭 和結局 打鬥也還好 沒有即刻救援的 最強老爸 那樣神勇
+                                </div>
+                                <div class="comment_time">發表時間：2018-11-09 17:02:55</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member_talk_content_4"><i id="more" class="fas fa-chevron-down fa-3x"></i></div>
                 </div>
             </section>
             <section class="section section_5">

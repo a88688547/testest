@@ -16,6 +16,8 @@
         />
         <!-- 載入"導覽列"檔案 -->
         <link rel="stylesheet" href="./css/header.css" />
+        <!-- 載入 light BOX js -->
+        <script src="./js/light_box.js"></script>
         <!-- 載入"All 通用設定"檔案 -->
         <link rel="stylesheet" href="./css/all.css" />
         <!-- 載入"本頁"檔案 -->
@@ -66,14 +68,14 @@
                     <div class="logo_img"><img src="./image/logo.png" alt="logo_img" /></div>
                     <h1 class="logo_title">The Cinema</h1>
                 </a>
-                <a href="" class="member_btn">
+                <a class="member_btn">
                     <i class="fas fa-user fa-3x"></i>
                 </a>
                 <nav class="navBar">
                     <div class="nav_top">
                         <ul class="ul_box ul_box_1">
-                            <li><a href="">註冊會員</a></li>
-                            <li><a href="">會員登入</a></li>
+                            <li><a class="signin">註冊會員</a></li>
+                            <li><a class="login">會員登入</a></li>
                         </ul>
                     </div>
                     <div class="nav_bot">
@@ -86,6 +88,28 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+            <div class="light_box">
+                <form action="" class="form_box">
+                    <div class="close_img"><img src="./image/close.png" alt="close" /></div>
+                    <div>
+                        <div class="type_box">
+                            <div class="signinbtn">會員註冊</div>
+                            <div class="loginbtn type_on">會員登入</div>
+                        </div>
+                        <div class="account_box">
+                            <label for="account">帳號 :</label>
+                            <input type="text" id="account" placeholder="帳號提示:ced101" name="account" />
+                            <div class="feedback feedback_acc"></div>
+                        </div>
+                        <div class="password_box">
+                            <label for="password">密碼 : </label>
+                            <input type="password" name="password" id="password" placeholder="密碼提示:ced101" />
+                            <div class="feedback feedback_pass"></div>
+                        </div>
+                        <button type="button" id="login">登入</button>
+                    </div>
+                </form>
             </div>
         </header>
         <!-- ----麵包屑 breadcrumb---- -->

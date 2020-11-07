@@ -50,9 +50,14 @@ main {
     text-overflow: ellipsis;
     display: block;
     width: 100%;
+    /* color: #9e9a99; */
+}
+.text {
+    color: #9e9a99;
 }
 .gray {
-    color: #9e9a99;
+    /* color: #9e9a99; */
+    color: #000;
 }
 .hot {
     color: red;
@@ -358,15 +363,28 @@ main {
 
 .member_talk_content_4 {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     padding: 5px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
-.member_talk_content_4 > span {
+.member_talk_content_4 > i {
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50, 0%);
+    cursor: pointer;
     padding: 5px;
     background-color: #6593dc;
     color: #fff;
-    font-size: 2rem;
-    border-radius: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    /* line-height: 20px; */
+}
+
+.more_on {
+    transform: rotateX(180deg);
 }
 
 @media (min-width: 576px) {
@@ -493,4 +511,9 @@ main {
 .slick-center {
     transform: scale(1.08);
     opacity: 1;
+}
+
+/* ------ 更多評論 切換 ------ */
+.member_talk_content_3_more {
+    display: none;
 }

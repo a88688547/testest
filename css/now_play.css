@@ -60,6 +60,7 @@ main {
     #waterfallArea {
         max-width: 690px !important;
         margin: 0 auto;
+        overflow: hidden;
     }
 }
 
@@ -71,8 +72,26 @@ main {
     #waterfallArea {
         max-width: 1028px !important;
         margin: 0 auto;
+        overflow: hidden;
     }
     :root {
         font-size: 60%;
     }
+}
+/* 瀑布流 白底 待讀取畫面 */
+/* .loadingScreen {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+} */
+
+/* 電影照片 hover 效果 */
+.movie_img {
+    overflow: hidden;
+}
+.movie_img > img {
+    transition: all 0.6s ease-in-out;
+}
+.movie_img > img:hover {
+    transform: scale(1.1);
 }

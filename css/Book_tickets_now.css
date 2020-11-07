@@ -87,6 +87,17 @@ main {
     display: none;
 } */
 
+/* 電影照片 hover 效果 */
+.movie_img {
+    overflow: hidden;
+}
+.movie_img > img {
+    transition: all 0.6s ease-in-out;
+}
+.movie_img > img:hover {
+    transform: scale(1.1);
+}
+
 @media (min-width: 374px) {
     .time_list > a {
         margin-bottom: 5px;

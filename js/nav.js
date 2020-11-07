@@ -22,9 +22,9 @@ $(document).ready(function () {
 })
 // 會員圖示 點擊時  選單向下滑出
 
-$(document).ready(function () {
-    $('.member_btn').click(function () {
-        // $(this).toggleClass("btn-on");
-        $('.member_ul').slideToggle(300)
-    })
-})
+// $(document).ready(function () {
+//     $('.member_btn').click(function () {
+//         // $(this).toggleClass("btn-on");
+//         $('.member_ul').slideToggle(300)
+//     })
+// })

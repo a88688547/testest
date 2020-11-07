@@ -62,7 +62,7 @@ $(function () {
     //                 $('#waterfallArea').masonry({
     //                     itemSelector: '.content_box',
     //                     columnWidth: 5, //gap
-    //                     animate: true,
+    //                     animate: true,}
     //                     horizontalOrder: true,
     //                     originTop: true,
     //                 })
@@ -79,4 +79,12 @@ $(function () {
     //         }
     //     }
     // }
+
+    let box = document.querySelectorAll('.content_box')
+
+    for (i = 0; i < box.length; i++) {
+        $(box[i])
+            .addClass('animate__animated animate__flipInY')
+            .css('animation-delay', i * 0.25 + 's')
+    }
 })

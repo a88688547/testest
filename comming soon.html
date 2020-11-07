@@ -15,6 +15,8 @@
         />
         <!-- 載入"導覽列"檔案 -->
         <link rel="stylesheet" href="./css/header.css" />
+        <!-- 載入 light BOX js -->
+        <script src="./js/light_box.js"></script>
         <!-- 載入"All 通用設定"檔案 -->
         <link rel="stylesheet" href="./css/all.css" />
         <!-- 載入"本頁"檔案 -->
@@ -54,14 +56,14 @@
                     <div class="logo_img"><img src="./image/logo.png" alt="logo_img" /></div>
                     <h1 class="logo_title">The Cinema</h1>
                 </a>
-                <a href="" class="member_btn">
+                <a class="member_btn">
                     <i class="fas fa-user fa-3x"></i>
                 </a>
                 <nav class="navBar">
                     <div class="nav_top">
                         <ul class="ul_box ul_box_1">
-                            <li><a href="">註冊會員</a></li>
-                            <li><a href="">會員登入</a></li>
+                            <li><a class="signin">註冊會員</a></li>
+                            <li><a class="login">會員登入</a></li>
                         </ul>
                     </div>
                     <div class="nav_bot">
@@ -74,6 +76,28 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+            <div class="light_box">
+                <form action="" class="form_box">
+                    <div class="close_img"><img src="./image/close.png" alt="close" /></div>
+                    <div>
+                        <div class="type_box">
+                            <div class="signinbtn">會員註冊</div>
+                            <div class="loginbtn type_on">會員登入</div>
+                        </div>
+                        <div class="account_box">
+                            <label for="account">帳號 :</label>
+                            <input type="text" id="account" placeholder="帳號提示:ced101" name="account" />
+                            <div class="feedback feedback_acc"></div>
+                        </div>
+                        <div class="password_box">
+                            <label for="password">密碼 : </label>
+                            <input type="password" name="password" id="password" placeholder="密碼提示:ced101" />
+                            <div class="feedback feedback_pass"></div>
+                        </div>
+                        <button type="button" id="login">登入</button>
+                    </div>
+                </form>
             </div>
         </header>
         <!-- ----麵包屑 breadcrumb---- -->
@@ -99,16 +123,16 @@
                         data-aos-duration="1000"
                     >
                         <div class="movie_img">
-                            <img src="./image/commingsoon/commingsoon_01.jpg" alt="怪胎" />
+                            <img src="./image/commingsoon/commingsoon_01.jpg" alt="翻供" />
                             <div class="movie_info">
                                 <div class="movie_time">上映日期 : 2020-08-07</div>
                                 <div class="movie_title">
                                     電影名稱 :
-                                    <h3>怪胎</h3>
+                                    <h3>翻供</h3>
                                 </div>
-                                <div class="movie_type">類型 : 愛情</div>
-                                <div class="movie_actor">演員 : 林柏宏、謝欣穎</div>
-                                <div class="movie_long">片長 : 01時44分</div>
+                                <div class="movie_type">類型 : 懸疑、驚悚</div>
+                                <div class="movie_actor">演員 : 申惠善、裴宗玉</div>
+                                <div class="movie_long">片長 : 01時51分</div>
                             </div>
                         </div>
                     </a>
@@ -227,16 +251,16 @@
                         data-aos-duration="1000"
                     >
                         <div class="movie_img">
-                            <img src="./image/commingsoon/commingsoon_07.jpg" alt="魔物獵人" />
+                            <img src="./image/commingsoon/commingsoon_07.jpg" alt="皮面人" />
                             <div class="movie_info">
                                 <div class="movie_time">上映日期 : 2020-10-31</div>
                                 <div class="movie_title">
                                     電影名稱 :
-                                    <h3>魔物獵人</h3>
+                                    <h3>皮面人</h3>
                                 </div>
-                                <div class="movie_type">類型 : 動作</div>
-                                <div class="movie_actor">演員 : 蜜拉喬娃維琪</div>
-                                <div class="movie_long">片長 : 02時30分</div>
+                                <div class="movie_type">類型 : 恐怖、懸疑、驚悚</div>
+                                <div class="movie_actor">演員 : 史帝芬杜夫、莉莉泰勒、凡妮莎葛瑞斯、芬恩瓊斯</div>
+                                <div class="movie_long">片長 : 01時28分</div>
                             </div>
                         </div>
                     </a>
@@ -283,7 +307,7 @@
                                 <!-- 電影圖片 -->
                                 <div class="s2_item_left">
                                     <a href="./movie_introduction.html" class="s2_item_img"
-                                        ><img src="./image/commingsoon/commingsoon_01.jpg" alt="怪胎"
+                                        ><img src="./image/commingsoon/commingsoon_01.jpg" alt="翻供"
                                     /></a>
                                 </div>
                                 <!-- 文字敘述 -->
@@ -292,11 +316,11 @@
                                     <div class="movie_info">
                                         <div class="movie_title">
                                             電影名稱 :
-                                            <h3>怪胎</h3>
+                                            <h3>翻供</h3>
                                         </div>
-                                        <div class="movie_type">類型 : 愛情</div>
-                                        <div class="movie_actor">演員 : 林柏宏、謝欣穎</div>
-                                        <div class="movie_long">片長 : 01時44分</div>
+                                        <div class="movie_type">類型 : 懸疑、驚悚</div>
+                                        <div class="movie_actor">演員 : 申惠善、裴宗玉</div>
+                                        <div class="movie_long">片長 : 01時51分</div>
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +390,7 @@
                                 <!-- 電影圖片 -->
                                 <div class="s2_item_left">
                                     <a href="./movie_introduction.html" class="s2_item_img"
-                                        ><img src="./image/commingsoon/commingsoon_07.jpg" alt="魔物獵人"
+                                        ><img src="./image/commingsoon/commingsoon_07.jpg" alt="皮面人"
                                     /></a>
                                 </div>
                                 <!-- 文字敘述 -->
@@ -375,11 +399,14 @@
                                     <div class="movie_info">
                                         <div class="movie_title">
                                             電影名稱 :
-                                            <h3>魔物獵人</h3>
+                                            <h3>皮面人</h3>
                                         </div>
-                                        <div class="movie_type">類型 : 動作</div>
-                                        <div class="movie_actor">演員 : 蜜拉喬娃維琪</div>
-                                        <div class="movie_long">片長 : 02時30分</div>
+                                        <div class="movie_type">類型 : 恐怖、懸疑、驚悚</div>
+                                        <div class="movie_actor">
+                                            演員 : 史帝芬杜夫、莉莉泰勒、凡妮莎葛瑞斯、芬恩瓊斯
+                                        </div>
+
+                                        <div class="movie_long">片長 : 01時28分</div>
                                     </div>
                                 </div>
                             </div>
