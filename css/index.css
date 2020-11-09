@@ -74,9 +74,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    .section_2 {
-        /* margin-bottom: 100px; */
-    }
 }
 
 .section_2_box {
@@ -418,22 +415,9 @@ main {
         /* font-size: 2.6rem !important; */
         padding: 10px 0;
     }
-
-    .s3_right_movie_info > div,
-    .s3_left_movie_info > div {
-        /* font-size: 2.1rem !important; */
-    }
 }
 
 @media (max-width: 501px) {
-    .info_long {
-        /* white-space: nowrap; */
-        /* overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; */
-    }
     .s3_right_movie_info > h3,
     .s3_left_movie_info > h3 {
         /* font-size: 2.4rem !important; */

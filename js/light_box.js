@@ -3,7 +3,12 @@ $(document).ready(function () {
 
     $('#login').click(function () {
         $('#feedback').text('')
-        if ($('#account').val() == '') {
+        if ($('#login').text() == '註冊') {
+            $('.feedback_acc').text('')
+            $('.feedback_pass').text('')
+            $('.feedback_pass').text('很抱歉，目前尚未開放新會員註冊，請密切注意官網資訊。')
+            return false
+        } else if ($('#account').val() == '') {
             $('.feedback_acc').text('')
             $('.feedback_pass').text('')
             $('.feedback_acc').text('請填入帳號 !!!')
@@ -51,12 +56,16 @@ $(document).ready(function () {
         $('.light_box').show()
     })
     $('.login').click(function () {
+        $('.feedback_acc').text('')
+        $('.feedback_pass').text('')
         $('.type_box > div').removeClass('type_on')
         $('.loginbtn').addClass('type_on')
         $('#login').text('登入')
         $('.light_box').show()
     })
     $('.signin').click(function () {
+        $('.feedback_acc').text('')
+        $('.feedback_pass').text('')
         $('.type_box > div').removeClass('type_on')
         $('.signinbtn').addClass('type_on')
         $('#login').text('註冊')
@@ -65,11 +74,15 @@ $(document).ready(function () {
 
     // 註冊 及 登入 功能切換
     $('.signinbtn').click(function () {
+        $('.feedback_acc').text('')
+        $('.feedback_pass').text('')
         $('.type_box > div').removeClass('type_on')
         $(this).addClass('type_on')
         $('#login').text('註冊')
     })
     $('.loginbtn').click(function () {
+        $('.feedback_acc').text('')
+        $('.feedback_pass').text('')
         $('.type_box > div').removeClass('type_on')
         $(this).addClass('type_on')
         $('#login').text('登入')
