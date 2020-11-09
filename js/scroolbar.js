@@ -28,7 +28,7 @@ $(document).ready(function () {
             console.log('01')
         })
         .setClassToggle('#icon01', 'on')
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
 
     var scroolbar2 = new ScrollMagic.Scene({
@@ -39,7 +39,7 @@ $(document).ready(function () {
             console.log('02')
         })
         .setClassToggle('#icon02', 'on')
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
 
     var scroolbar2 = new ScrollMagic.Scene({
@@ -50,7 +50,7 @@ $(document).ready(function () {
             console.log('03')
         })
         .setClassToggle('#icon03', 'on')
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
     var scroolbar2 = new ScrollMagic.Scene({
         triggerElement: '#key04',
@@ -60,7 +60,7 @@ $(document).ready(function () {
             console.log('04')
         })
         .setClassToggle('#icon04', 'on')
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
     var scroolbar2 = new ScrollMagic.Scene({
         triggerElement: '#key05',
@@ -70,7 +70,7 @@ $(document).ready(function () {
             console.log('05')
         })
         .setClassToggle('#icon05', 'on')
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
     // --------------------------------------------------------------------
     setInterval(resizecheck, 500) //設定定時器 每0.5秒做 高度確認
