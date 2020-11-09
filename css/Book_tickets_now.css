@@ -53,6 +53,10 @@ main {
     text-align: center;
     color: #464f69;
 }
+
+.movie_long {
+    color: #9e9a99;
+}
 .time_list {
     display: flex;
     flex-wrap: wrap;

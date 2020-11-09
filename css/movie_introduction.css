@@ -373,7 +373,7 @@ main {
     position: relative;
     /* top: 50%; */
     left: 50%;
-    transform: translate(-50, 0%);
+    transform: translate(-50%, 0%);
     cursor: pointer;
     padding: 5px;
     background-color: #6593dc;

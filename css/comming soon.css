@@ -42,7 +42,8 @@
 }
 
 .movie_time {
-    color: #473e4a;
+    /* color: #473e4a; */
+    color: #9e9a99;
     font-size: 3rem;
     font-weight: 500;
 }
@@ -51,6 +52,10 @@
     display: inline-block;
     font-weight: bold;
 }
+.movie_long {
+    color: #9e9a99;
+}
+
 /* ---- RWD 變化 ----- */
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .section_1_box {
