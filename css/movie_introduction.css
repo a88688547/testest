@@ -383,8 +383,12 @@ main {
     /* line-height: 20px; */
 }
 
+#more {
+    transition: all 0.5s;
+    /* transform: rotateX(180deg); */
+}
 .more_on {
-    transform: rotateX(180deg);
+    transform: rotateX(180deg) !important;
 }
 
 @media (min-width: 576px) {
